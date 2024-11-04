@@ -9,7 +9,7 @@ import Work from './pages/Work/Work'
 
 // index.js ou App.js
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Footer from "./components/Footer/Footer"
 
 function App() {
 
@@ -25,8 +25,9 @@ function App() {
           {/* <Route path="*" element={<NoPage />} /> */}
         
       </Routes>
+      <Footer />
+  
     </BrowserRouter>
-        
     </>
   )
 }
