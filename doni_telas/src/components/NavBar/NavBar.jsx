@@ -6,12 +6,18 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
+import { FaHammer, FaHardHat } from 'react-icons/fa';
+import { GiConcreteBag, GiBrickWall } from 'react-icons/gi';
+import { MdBuild } from 'react-icons/md';
+import { RiBuilding2Fill } from 'react-icons/ri';
+
+
 const NavBar = () => {
   return (
     <div>
          <Navbar expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand as={Link} to="/">DONI_TELAS</Navbar.Brand>
+        <Navbar.Brand as={Link} to="/"><FaHammer /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
