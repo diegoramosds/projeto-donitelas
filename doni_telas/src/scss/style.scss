@@ -1,20 +1,49 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 @import 'Home.scss';
 @import 'Footer.scss';
+@import 'About.scss';
+@import 'Accordion.scss';
+@import 'AboutCarousels.scss';
+@import 'Work.scss';
+@import 'WorkCarousel.scss';
+@import 'Information.scss';
+@import 'Form-information.scss';
 
-
-* {
-    padding: 0;
-    margin: 0;
-}
+html, body {
+    overflow-x: hidden;
+ }
+ 
 body {
     max-width: 100vw;
     width: 100vw;
-    min-height: 100vh;  
+    min-height: 100vh;
     background-image: url("../img/photo-main.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
     color: white;
 }
+
+h3, h4 {
+    color: #59a87d;
+}
+
+a {
+    text-decoration: none;
+    color: #59a87d;
+}
+a:hover {
+    text-decoration: none;
+    color: #59a87dc4;
+}
+.important-words {
+    color: #59a87d;
+}
+
+ul {
+    list-style: none;
+}
+
+
 
