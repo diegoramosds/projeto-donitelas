@@ -1,0 +1,15 @@
+.main-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-info p {
+    width: 80%;
+    font-size: 1.2em;
+    margin: 0 auto;
+    margin-top: 4em;
+    padding-bottom: 3em;
+}

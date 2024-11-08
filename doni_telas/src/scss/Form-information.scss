@@ -1,0 +1,40 @@
+.env-form {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    width: 100%;
+}
+
+form {
+  width: 100%;
+}
+
+.loading-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.loading-container .error-message {
+    color: #c92121d2;
+    }
+    .loading-container .success-message {
+      color: #fff;
+      }
+
+.error-message, .success-message {
+    width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 5%;
+    font-weight: bold;
+    background-color: #000;
+    box-shadow: 1px 1px 1px 3px #59a87d2a;
+    padding: 2px;
+  }
+
+  .text-information {
+    text-align: center;
+  }
