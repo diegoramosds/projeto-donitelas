@@ -1,8 +1,13 @@
 footer {
     display: flex;
-    min-height: 200px;
+    position: relative;
+    bottom: 0;
     justify-content: center;
     align-items: center;
+    min-height: 200px;
     border-top: 1px solid rgb(134, 134, 134);
-    margin-top: 500px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    margin-top: 20%;
 }

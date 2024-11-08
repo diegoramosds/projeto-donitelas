@@ -17,16 +17,17 @@ const NavBar = () => {
     <div>
          <Navbar expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
       <Container>
-        <Navbar.Brand as={Link} to="/"><FaHammer size={30} /></Navbar.Brand>
+        <Navbar.Brand as={Link} to="/"><strong>DONI<span className="important-words">TELAS</span></strong></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link as={Link} to="/">Home</Nav.Link>
             <Nav.Link as={Link} to="/about">Sobre</Nav.Link>
             <Nav.Link as={Link} to="/work">Serviços</Nav.Link>
+            <Nav.Link as={Link} to="/information">Mais informações</Nav.Link>
             <NavDropdown title="Contato" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">
-              <a href="https://wa.me/55119953463533?text=Olá,%20gostaria%20de%20solitar%20um%20orçamento" target="_blank">Whatsapp</a>
+              <a href="https://wa.me/5511968579924?text=Olá,%20gostaria%20de%20solitar%20um%20orçamento" target="_blank">Whatsapp</a>
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 <a href="mailto:diegora@gmail.com" target="_blank">E-mail</a>

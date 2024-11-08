@@ -1,6 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
+
 
 const Footer = () => {
   return (
@@ -14,15 +16,15 @@ const Footer = () => {
           <Col md={4}>
             <h5>Links Úteis</h5>
             <ul className="list-unstyled">
-              <li><a href="#home" className="text-white">Home</a></li>
-              <li><a href="#about" className="text-white">Sobre</a></li>
-              <li><a href="#services" className="text-white">Serviços</a></li>
+              <li><Link to="/" className="text-white">Home</Link></li>
+              <li><Link to="/about" className="text-white">Sobre</Link></li>
+              <li><Link to="/work" className="text-white">Serviços</Link></li>      
             </ul>
           </Col>
           <Col md={4}>
             <h5>Contato</h5>
-            <p>Email: contato@empresa.com</p>
-            <p>Telefone: (11) 1234-5678</p>
+            <p><a href="mailto:exemple@gmail.com" target='_blank'>Email: contato@empresa.com</a></p>
+            <p><a href="tel:+55971999999999" target='_blank'>Telefone: (11) 1234-5678</a></p>
           </Col>
         </Row>
         <Row className="mt-3">
