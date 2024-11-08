@@ -1,0 +1,71 @@
+.main-about {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.info-about {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  text-align: center;
+}
+
+.photo-about {
+width: 100%;
+}
+
+.info-about img {
+  width: 65%;
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px 4px #000;
+}
+
+.info-about p {
+   width: 90%;
+   text-align: left;
+   margin: 4em;
+   font-size: 1em;
+  }
+
+  .text-about {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 2em;
+    font-size: 1.1em;
+    margin-bottom: 2em;
+    text-align: center;
+    line-height: 1.8em;
+  }
+
+.places {
+ display: flex; 
+ width: 50%;
+ background-color: #000000f3;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ margin: 0 auto;
+ margin-top: 5em;
+ padding-bottom: 4em;
+ box-shadow: 1px 1px 1px 3px #59a87d2a;
+ border-radius: 10px;
+}
+ .places p {
+  width: 80%;
+  margin: 0 auto;
+ }
+
+.about-fedbacks {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}

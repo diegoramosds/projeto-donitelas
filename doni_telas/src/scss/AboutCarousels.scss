@@ -1,0 +1,43 @@
+.main-fedbacks {
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 5em;
+  }
+
+.title-fedbacks {
+    padding: 15px;
+}
+
+.main-fedbacks .carousel-item {
+    height: 170px; 
+    min-width: 480px;
+    width: 480px;
+    min-height: 170px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .carousel-text {
+    padding: 30px;
+    text-align: center;
+    margin: 1em;
+    margin-bottom: 20px;
+  }
+  .carousel-text h3 {
+   font-size: 1.2em;
+  }
+  .carousel-text p {
+    font-size: 1em;
+  }
+  
+  .main-fedbacks .carousel-item {
+    display: none;
+  }
+  .main-fedbacks .carousel-item.active {
+    display: block; 
+  }
+
+
