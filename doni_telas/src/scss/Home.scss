@@ -1,17 +1,46 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
 
-.main-navbar {
+.main-home {
+    width: 100%;
     display: flex;
-    justify-content: space-between;
-    margin: 10em;
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     color: rgb(165, 165, 165);
-    font-size: x-large;
+    gap: 10px;
+    margin-top: 7em;
 }
 
-.info-navbar h1 {
-
-
+.link-home {
+    text-decoration: none;
+    text-align: center;
 }
+
+.info-home {
+    width: 40%;
+    margin-bottom: 1em; /* Espaço abaixo do info-home */
+}
+
+.counters {
+    display: flex;
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+    margin-top: 2em; /* Espaço extra no topo */
+    margin-left: 1em; /* Espaço da lateral esquerda */
+}
+
+.counters p {
+    padding: 0 10px; /* Espaçamento interno para cada item */
+    border-right: 1px solid;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+.counters p:last-child {
+    border-right: none; /* Remove a borda do último item */
+}
+
+@media screen and (max-width: 767px) {
+   
+  }
