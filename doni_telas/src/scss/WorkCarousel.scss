@@ -1,51 +1,59 @@
 .work-carousel {
-    width: 100%;
-    padding-bottom: 3em;
-    color: black;
+  width: 100%;
+  padding-bottom: 3em;
+  color: black;
 }
+
 .work-carousel .carousel-item {
-    display: none; /* Garantir que apenas um item é mostrado por vez */
-    transition: opacity 0.5s ease-in-out; /* Transição suave entre slides */
-  }
-  
-  .work-carousel .carousel-item.active {
-    display: block;
-    opacity: 1;
-  }
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.work-carousel .carousel-item.active {
+  display: flex;
+  opacity: 1;
+}
 
 .carousel-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    height: 480px; 
-    min-width: 400px;
-    width: 700px;
-    min-height: 170px; 
-  }
-
-  .carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-
-  .carousel-item{
-    display: none;
-  }
-  .carousel-item.active {
-    display: block; 
-  }
-/* Define uma cor personalizada para a seta da esquerda */
-.carousel-control-prev-icon {
-  background-color: rgba(255, 255, 255, 0.527); /* Altere para a cor desejada */
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  width: 700px; /* Largura fixa */
+  height: 480px; /* Altura fixa para manter o padrão */
+  margin: 0 auto; /* Centraliza o conteúdo */
 }
 
-/* Define uma cor personalizada para a seta da direita */
+.carousel-item img {
+  width: 650px; /* Largura fixa */
+  height: 100%; /* Altura automática para manter a proporção */
+  max-height: 480px; /* Garante que não exceda a altura do item */
+  object-fit: cover; /* Cobre o espaço mantendo a centralização */
+  border-radius: 10px;
+}
+
+.carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(255, 255, 255, 0.7); /* Altere para a cor desejada */
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 50%;
+  padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-item {
+    min-width: 300px;
+    width: 100%;
+    padding: 10px;
+    height: 350px; /* Altura menor para telas pequenas */
+  }
+  .carousel-item img {
+    width: 100%; /* Adapta a largura para telas menores */
+    max-height: 350px; /* Reduz a altura em telas pequenas */
+  }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  font-size: .9em;
+}
 }
