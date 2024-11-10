@@ -1,6 +1,8 @@
 .main-about {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
@@ -31,14 +33,14 @@ width: 100%;
    width: 90%;
    text-align: left;
    margin: 4em;
-   font-size: 1em;
+   font-size: 1.1em;
   }
 
   .text-about {
     width: 70%;
     margin: 0 auto;
     margin-top: 2em;
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin-bottom: 2em;
     text-align: center;
     line-height: 1.8em;
@@ -58,14 +60,74 @@ width: 100%;
  box-shadow: 1px 1px 1px 3px #59a87d2a;
  border-radius: 10px;
 }
+
+.places h3 {
+  margin: 1em;
+}
+
+.places ul {
+  padding: 0;
+  margin: 0; 
+  width: 100%;
+  padding-bottom: 2em;
+  list-style: none;
+}
  .places p {
   width: 80%;
   margin: 0 auto;
  }
 
-.about-fedbacks {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+
+
+
+
+@media screen and (max-width: 767px) {
+  .info-about {
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.6em;
+  }
+
+  .info-about {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.1em;
+  }
+  .places { 
+    width: 85%;
+   }
+   .places p {
+    width: 90%;
+   }
+  
 }
+
+@media screen and (min-width: 768px) and (max-width: 1267px) {
+  .info-about {
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.6em;
+  }
+
+  .info-about {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.1em;
+  }
+  .places { 
+    width: 85%;
+   }
+   .places p {
+    width: 90%;
+   }
+  }
+ 
+
+
+
