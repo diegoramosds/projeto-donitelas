@@ -15,7 +15,7 @@ import work10 from '../../img/work10.jpg';
 
 function IndividualIntervalsExample() {
   return (
-    <div>
+    <div className='work-carousel'>
       <h3>Alguns serviços feitos</h3>
       <Carousel slide={false}>
         <Carousel.Item>

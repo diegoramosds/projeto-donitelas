@@ -26,7 +26,7 @@ const About = () => {
             Meu objetivo é construir relações de <span className='important-words'>confiança</span> e oferecer um atendimento personalizado, 
             onde cada etapa do processo
            é feita com <span className='important-words'>responsabilidade</span> e cuidado, garantindo a satisfação e a
-           <span className='important-words'>segurança</span>
+           <span className='important-words'> segurança </span>
              de quem confia no meu trabalho.</p>
           <div className='photo-about'>
             <img src={PhtotoAbout} alt="" />
@@ -58,12 +58,12 @@ const About = () => {
            para verificar a disponibilidade.</p>
         </div>
       </div>
-      <div>
+      
         <div className='about-fedbacks'>
           <TextCarousel />
         </div>
-        <AllCollapseExample />     
-      </div>
+
+      <AllCollapseExample />     
     </div>
   )
 }
