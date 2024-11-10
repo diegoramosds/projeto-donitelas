@@ -1,37 +1,59 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
 
-
 .main-home {
     width: 100%;
     display: flex;
+    margin: 0 auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: rgb(165, 165, 165);
+    color: #a5a5a5;
     gap: 10px;
-    margin-top: 7em;
-}
-
-.link-home {
-    text-decoration: none;
-    text-align: center;
+    margin-top: 9em;
 }
 
 .info-home {
-    width: 40%;
-    margin-bottom: 1em; /* Espaço abaixo do info-home */
+    width: 50%;
+    margin-bottom: 1em;
 }
-
+.info-home p { 
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+.icon-home svg {
+    font-size: 25px;
+    margin-top: 1em;
+    margin-bottom: 2.4em;
+    animation: rotateIcon 1s ease-out 1;
+}
+@keyframes rotateIcon {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(-10deg);
+    }
+    75% {
+      transform: rotate(5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
 .counters {
-    display: flex;
-    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
-    margin-top: 2em; /* Espaço extra no topo */
-    margin-left: 1em; /* Espaço da lateral esquerda */
+    display: flex;    
+    margin-top: 2em; 
+    padding: 10px;
 }
 
 .counters p {
-    padding: 0 10px; /* Espaçamento interno para cada item */
+    padding: 10px;
     border-right: 1px solid;
     font-size: 1.3em;
     font-weight: bold;
@@ -41,6 +63,44 @@
     border-right: none; /* Remove a borda do último item */
 }
 
+.link-home {
+    width: 50%;
+    font-size: 1.2em;
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 767px) {
-   
+    .info-home {
+        width:98%;
+        font-size: 1.2em;
+    }
+    .info-home p {
+        font-size: .8em;
+    }
+    
+    .counters p {
+        font-size: 1em;
+    }
+    .link-home {
+        width: 100%;
+        font-size: 1em;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1267px) {
+    .info-home {
+        width: 90%;
+        font-size: 1em;
+
+    }
+    .info-home h3 {
+        font-size: 1.2em;
+    }
+    .info-home p {
+        font-size: 1em;
+    }
+    .counters p {
+        font-size: 1.2em;
+    }
+    
   }

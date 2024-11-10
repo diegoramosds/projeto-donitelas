@@ -1,4 +1,5 @@
 import CountUp from 'react-countup';
+import { FaTools } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -9,15 +10,20 @@ const Home = () => {
         <p className="important-words">Instalação e Manutenção de Telas | Cercas e Grades de Segurança 
           | Serviços de Construção e Reformas de quadras </p>
       </div>
+      <div>
+      </div>
       <div className="counters">
-         <p>+<CountUp start={0} end={500} duration={4} /> Clientes satisfeitos</p>
-         <p>+<CountUp start={0} end={500} duration={4} /> Serviços feitos</p>
+         <p>+<CountUp start={0} end={599} duration={4} /> Clientes satisfeitos</p>
+         <p>+<CountUp start={0} end={599} duration={4} /> Serviços realizados</p>
+      </div>
+      <div className='icon-home'>
+        <FaTools />
       </div>
         <div className='link-home'>
-          <Link to="/work">Saiba mas</Link>
+          <Link to="/about"> CLIQUE AQUI </Link> e saiba mas!
         </div>
       </div>
   )
 }
 
-export default Home
+export default Home;
