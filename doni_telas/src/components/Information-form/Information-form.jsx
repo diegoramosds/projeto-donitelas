@@ -24,7 +24,7 @@ function TextControls() {
             message: message
         };   
 
-        emailjs.send("service_fiqxtwp", "template_mg9f27p", templateParams, "B0mlsy15Z3WowbyQr")
+        emailjs.send("service_fiqxtwp", "template_mg9f27p", templateParams, "B0mly15Z3WowbyQr")
             .then(() => {
                 setName("");
                 setEmail("");
@@ -47,7 +47,7 @@ function TextControls() {
     };
 
     return (
-        <div className="env-form" bg="dark" data-bs-theme="dark">
+        <div className="env-form" data-bs-theme="dark">
             <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formName">
                     <Form.Label>Seu nome</Form.Label>

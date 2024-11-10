@@ -13,7 +13,7 @@ import work9 from '../../img/work9.jpg';
 import work10 from '../../img/work10.jpg';
 
 
-function IndividualIntervalsExample() {
+function WorkCarousel() {
   return (
     <div className='work-carousel'>
       <h3>Alguns serviços feitos</h3>
@@ -21,86 +21,86 @@ function IndividualIntervalsExample() {
         <Carousel.Item>
           <img src={work1} alt="" />
           <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3>Campo</h3>
+            <p>Montagem completa de campo com redes.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
         <img src={work2} alt="" />
           <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Campo</h3>
+            <p>Montagem completa de campo com acabamento de madeira e redes.</p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
         <img src={work3} alt="" />
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>Cmapo society</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Montagem completa de campo society com instalação de telas.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
         <img src={work4} alt="" />
           <Carousel.Caption>
-            <h3>4 slide label</h3>
+            <h3>Quadra esportiva</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Instalação de telas e acabamentos gerais.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
         <img src={work5} alt="" />
           <Carousel.Caption>
-            <h3>5 slide label</h3>
+            <h3>Cerca</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+             Instalação de cerca com acabamento em madeira.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
         <img src={work6} alt="" />
           <Carousel.Caption>
-            <h3>6 slide label</h3>
+            <h3>Quadra esportiva</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Montagem completa de quadra esportiva e instalação de telas.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
         <img src={work7} alt="" />
           <Carousel.Caption>
-            <h3>7 slide label</h3>
+            <h3>Tela</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Instalação de tela e acabamentos em campo society
             </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
         <img src={work8} alt="" />
           <Carousel.Caption>
-            <h3>8 slide label</h3>
+            <h3>Cerca</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Instalação de cerca com canaleta mourão de concreto.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
         <img src={work9} alt="" />
           <Carousel.Caption>
-            <h3>9 slide label</h3>
+            <h3>Cerca</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Instalação de cerca com canaleta mourão de madeira.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
         <img src={work10} alt="" />
           <Carousel.Caption>
-            <h3>10 slide label</h3>
+            <h3>Tela</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Instalação de tela e acabamentos.
             </p>
           </Carousel.Caption>
         </Carousel.Item>
@@ -109,4 +109,4 @@ function IndividualIntervalsExample() {
   );
 }
 
-export default IndividualIntervalsExample;
+export default WorkCarousel;

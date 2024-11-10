@@ -1,6 +1,6 @@
 import Accordion from 'react-bootstrap/Accordion';
 
-function AllCollapseExample() {
+function AccordionAbout() {
   return (
     <Accordion bg="dark" data-bs-theme="dark" className='accordion'>
       <h3>Dúvidas frequentes</h3>
@@ -9,7 +9,7 @@ function AllCollapseExample() {
         <Accordion.Body>
         Os valores variam de
          acordo com o tipo de <span className='important-words'>serviço</span> e as 
-         <span className='important-words'>necessidades</span>  específicas de cada cliente.
+         <span className='important-words'> necessidades</span>  específicas de cada cliente.
          Cada projeto é único, e por isso, é importante solicitar um <span className='important-words'> orçamento </span> 
           personalizado. Dessa forma, conseguimos
          avaliar todas as exigências e oferecer um preço justo e competitivo que atenda ao seu orçamento.
@@ -29,7 +29,7 @@ function AllCollapseExample() {
         <Accordion.Body>
           O tempo necessário para concluir o serviço depende da <span className='important-words'> complexidade </span> 
           e das <span className='important-words'> especificidades </span>
-          de cada projeto, além da <span className='important-words'> localidade </span>. Em geral, oferecemos uma estimativa durante o orçamento 
+          de cada projeto, além da <span className='important-words'> localidade</span>. Em geral, oferecemos uma estimativa durante o orçamento 
           inicial para que você saiba o que esperar e possa se planejar melhor.
         </Accordion.Body>
       </Accordion.Item>
@@ -39,7 +39,7 @@ function AllCollapseExample() {
         Normalmente, o pagamento é dividido em duas etapas: uma parte é recebida no
         <span className='important-words'> início do projeto </span>
           para cobrir materiais e preparação, e o restante é pago 
-         ao final, após a <span className='important-words'> conclusão do serviço </span> . 
+         ao final, após a <span className='important-words'> conclusão do serviço</span>. 
         Essa divisão garante transparência e segurança para ambas as partes.
         </Accordion.Body>
       </Accordion.Item>
@@ -69,4 +69,4 @@ function AllCollapseExample() {
   );
 }
 
-export default AllCollapseExample;
+export default AccordionAbout;

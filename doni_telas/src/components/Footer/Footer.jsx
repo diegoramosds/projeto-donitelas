@@ -23,13 +23,13 @@ const Footer = () => {
           </Col>
           <Col md={4}>
             <h5>Contato</h5>
-            <p><a href="mailto:exemple@gmail.com" target='_blank'>Email: telasdoni@gmail.com</a></p>
-            <p><a href="tel:+55971999999999" target='_blank'>Telefone: (11)96857-9924</a></p>
+            <p><a href="mailto:telasdoni@gmail.com" target='_blank'>Email: telasdoni@gmail.com</a></p>
+            <p><a href="tel:+5511968579924" target='_blank'>Telefone: (11)96857-9924</a></p>
           </Col>
         </Row>
         <Row className="mt-3">
           <Col className="text-center">
-            <small>&copy; 2024 DONI<span className='important-words'>TELAS</span>. Todos os direitos reservados.</small>
+            <small>&copy; 2024 DIEGO <span className='important-words'>RAMOS</span>. Todos os direitos reservados.</small>
           </Col>
         </Row>
       </Container>

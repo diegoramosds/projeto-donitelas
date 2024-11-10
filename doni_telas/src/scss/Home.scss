@@ -60,7 +60,7 @@
 }
 
 .counters p:last-child {
-    border-right: none; /* Remove a borda do último item */
+    border-right: none; 
 }
 
 .link-home {
@@ -71,7 +71,7 @@
 
 @media screen and (max-width: 767px) {
     .info-home {
-        width:98%;
+        width:95%;
         font-size: 1.2em;
     }
     .info-home p {

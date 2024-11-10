@@ -23751,7 +23751,7 @@ textarea.form-control-lg {
 }
 
 .counters p:last-child {
-  border-right: none; /* Remove a borda do último item */
+  border-right: none;
 }
 
 .link-home {
@@ -23762,7 +23762,7 @@ textarea.form-control-lg {
 
 @media screen and (max-width: 767px) {
   .info-home {
-    width: 98%;
+    width: 95%;
     font-size: 1.2em;
   }
   .info-home p {
@@ -23793,8 +23793,6 @@ textarea.form-control-lg {
 }
 footer {
   display: flex;
-  position: relative;
-  bottom: 0;
   justify-content: center;
   align-items: center;
   min-height: 200px;
@@ -23802,7 +23800,7 @@ footer {
   box-shadow: 0 -4px 6px -3px rgba(0, 0, 0, 0.9058823529);
   color: #fff;
   width: 100%;
-  margin-top: 40%;
+  margin-top: 250px;
 }
 
 .main-about {
@@ -23948,10 +23946,10 @@ footer {
 }
 
 .main-fedbacks .carousel-item {
-  height: 220px;
+  height: 240px;
   min-width: 480px;
   width: 480px;
-  min-height: 220px;
+  min-height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23986,7 +23984,7 @@ footer {
 @media screen and (max-width: 767px) {
   .main-fedbacks .carousel-item {
     min-width: 300px;
-    height: 270px;
+    height: 290px;
     min-height: 270px;
     width: 300px;
   }
@@ -24051,6 +24049,12 @@ footer {
   padding-top: 10px;
 }
 
+.text-work P {
+  font-size: 1.1em;
+  color: #59a87d;
+  margin-top: 10px;
+}
+
 .info-work {
   width: 80%;
   font-size: 1.2em;
@@ -24061,7 +24065,8 @@ footer {
 }
 
 .redirect-work {
-  width: 80%;
+  width: 60%;
+  font-size: 1.1em;
   margin: 0 auto;
   padding-top: 2em;
 }
@@ -24084,64 +24089,6 @@ footer {
     width: 70%;
   }
 }
-.work-carousel {
-  width: 100%;
-  padding-bottom: 3em;
-  color: black;
-}
-
-.work-carousel .carousel-item {
-  display: none;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.work-carousel .carousel-item.active {
-  display: flex;
-  opacity: 1;
-}
-
-.carousel-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px;
-  width: 700px; /* Largura fixa */
-  height: 480px; /* Altura fixa para manter o padrão */
-  margin: 0 auto; /* Centraliza o conteúdo */
-}
-
-.carousel-item img {
-  width: 650px; /* Largura fixa */
-  height: 100%; /* Altura automática para manter a proporção */
-  max-height: 480px; /* Garante que não exceda a altura do item */
-  object-fit: cover; /* Cobre o espaço mantendo a centralização */
-  border-radius: 10px;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: rgba(255, 255, 255, 0.7);
-  border-radius: 50%;
-  padding: 10px;
-}
-
-@media screen and (max-width: 767px) {
-  .carousel-item {
-    min-width: 300px;
-    width: 100%;
-    padding: 10px;
-    height: 350px; /* Altura menor para telas pequenas */
-  }
-  .carousel-item img {
-    width: 100%; /* Adapta a largura para telas menores */
-    max-height: 350px; /* Reduz a altura em telas pequenas */
-  }
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    font-size: 0.9em;
-  }
-}
 .main-info {
   width: 100%;
   display: flex;
@@ -24152,6 +24099,7 @@ footer {
 
 .main-info p {
   width: 80%;
+  text-align: center;
   font-size: 1.2em;
   margin: 0 auto;
   margin-top: 4em;
@@ -24164,6 +24112,10 @@ footer {
   align-items: center;
   flex-direction: column;
   width: 100%;
+}
+
+form {
+  width: 70%;
 }
 
 .loading-container {
@@ -24207,7 +24159,6 @@ html, body {
 }
 
 body {
-  box-sizing: border-box;
   max-width: 100vw;
   width: 100vw;
   min-height: 100vh;

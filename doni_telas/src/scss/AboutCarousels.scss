@@ -9,10 +9,10 @@
 }
 
 .main-fedbacks .carousel-item {
-    height: 220px; 
+    height: 240px; 
     min-width: 480px;
     width: 480px;
-    min-height: 220px; 
+    min-height: 240px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,7 +45,7 @@
   @media screen and (max-width: 767px) {
     .main-fedbacks .carousel-item {
       min-width: 300px;
-      height: 270px;  
+      height: 290px;  
       min-height: 270px; 
       width: 300px;
     }

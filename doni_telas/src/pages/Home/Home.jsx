@@ -20,7 +20,7 @@ const Home = () => {
         <FaTools />
       </div>
         <div className='link-home'>
-          <Link to="/about"> CLIQUE AQUI </Link> e saiba mas!
+          <Link to="/about"> CLIQUE AQUI </Link> e saiba mais!
         </div>
       </div>
   )

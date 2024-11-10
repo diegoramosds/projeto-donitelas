@@ -6,10 +6,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-import { FaHammer, FaHardHat } from 'react-icons/fa';
-import { GiConcreteBag, GiBrickWall } from 'react-icons/gi';
-import { MdBuild } from 'react-icons/md';
-import { RiBuilding2Fill } from 'react-icons/ri';
 import { useEffect, useRef, useState } from "react";
 
 
@@ -17,25 +13,22 @@ const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
   const navbarRef = useRef(null);
 
-  // Função para alternar o estado expandido
+
   const toggleMenu = () => setExpanded(!expanded);
 
-  // Função para fechar o menu
   const closeMenu = () => setExpanded(false);
 
-  // useEffect para fechar o menu ao clicar fora
+ 
   useEffect(() => {
     function handleClickOutside(event) {
-      // Verifica se o clique foi fora do menu
+      
       if (navbarRef.current && !navbarRef.current.contains(event.target)) {
         closeMenu();
       }
     }
 
-    // Adiciona o evento de clique ao document
     document.addEventListener("mousedown", handleClickOutside);
 
-    // Remove o evento ao desmontar o componente
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
