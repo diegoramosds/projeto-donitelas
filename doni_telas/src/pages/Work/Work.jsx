@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import IndividualIntervalsExample from "../../components/Work-carousel/WorkCarousel"
+import IndividualIntervalsExample from "../../components/Work-carousel/WorkCarousel";
 
 const Work = () => {
   return (
@@ -18,7 +18,7 @@ const Work = () => {
         </div>
         <div className="text-work">
         <h4>Cercas</h4>
-          <p>Soluções para cercas de segurança e design:</p>
+          <p>Soluções para cercas de segurança:</p>
         <ul>
           <li>Instalação de cercas de proteção em áreas industriais e residenciais</li>
           <li>Opções de cercas personalizadas para proteção</li>
@@ -28,7 +28,7 @@ const Work = () => {
         </div>
         <div className="text-work">
         <h4>Grades</h4>
-        <p>Instalação de grades para diferentes ambientes:</p>
+        <p>Instalação de grades:</p>
           <ul>
             <li>Grades de segurança para janelas, portas e varandas</li>
             <li>Grades decorativas personalizadas em diversos modelos</li>
@@ -38,7 +38,7 @@ const Work = () => {
         </div>
         <div className="text-work">
           <h4>Quadras esportivas</h4>
-        <p>Serviços especializados para quadras e áreas de recreação:</p>
+        <p>Serviços especializados para quadras:</p>
           <ul>
             <li>Instalação de telas e redes de proteção para quadras esportivas</li>
             <li>Montagem de cercas e divisórias em quadras</li>
@@ -49,25 +49,28 @@ const Work = () => {
       </div>
 
       <div className="info-work">
-        <p>Cada serviço que ofereço é cuidadosamente planejado e adaptado às 
-          características do ambiente e às preferências de nossos clientes,
-           sempre com foco em resultados que garantam segurança e satisfação.</p>
+        <p>Cada serviço que ofereço é cuidadosamente planejado e adaptado às <span className="important-words"> características do ambiente </span>
+           e às preferências de nossos clientes,
+           sempre com foco em resultados que garantam <span className="important-words"> segurança </span>  e <span className="important-words"> satisfação </span>.</p>
       </div>
 
-      <div className="carousel-work">
+      <div>
        <IndividualIntervalsExample />
       </div>
 
       <div className="">
         <p></p>
       </div>
-      
+
       <div className="redirect-work">
-        <p>Gostou e tem interesse? <a href="https://wa.me/5511968579924?text=Olá,%20gostaria%20de%20solitar%20um%20orçamento" target="_blank">CLIQUE AQUI</a> e solicite seu orçamento! </p>
-    
+        <p>Transforme seu ambiente com serviços de alta qualidade e acabamento impecável. 
+          Para mais informações, 
+          <a href="https://wa.me/5511968579924?text=Olá,%20gostaria%20de%20solitar%20um%20orçamento" target="_blank"> 
+           CLIQUE AQUI </a>
+           e  fale diretamente comigo!</p>
       </div>
     </div>
   )
 }
 
-export default Work
+export default Work;
