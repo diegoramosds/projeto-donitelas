@@ -23692,34 +23692,59 @@ textarea.form-control-lg {
 .main-home {
   width: 100%;
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: rgb(165, 165, 165);
+  color: #a5a5a5;
   gap: 10px;
-  margin-top: 7em;
-}
-
-.link-home {
-  text-decoration: none;
-  text-align: center;
+  margin-top: 9em;
 }
 
 .info-home {
-  width: 40%;
-  margin-bottom: 1em; /* Espaço abaixo do info-home */
+  width: 50%;
+  margin-bottom: 1em;
 }
 
+.info-home p {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 1.2em;
+}
+
+.icon-home svg {
+  font-size: 25px;
+  margin-top: 1em;
+  margin-bottom: 2.4em;
+  animation: rotateIcon 1s ease-out 1;
+}
+
+@keyframes rotateIcon {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .counters {
   display: flex;
-  justify-content: flex-start; /* Alinha o conteúdo à esquerda */
-  margin-top: 2em; /* Espaço extra no topo */
-  margin-left: 1em; /* Espaço da lateral esquerda */
+  margin-top: 2em;
+  padding: 10px;
 }
 
 .counters p {
-  padding: 0 10px; /* Espaçamento interno para cada item */
+  padding: 10px;
   border-right: 1px solid;
   font-size: 1.3em;
   font-weight: bold;
@@ -23729,6 +23754,43 @@ textarea.form-control-lg {
   border-right: none; /* Remove a borda do último item */
 }
 
+.link-home {
+  width: 50%;
+  font-size: 1.2em;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .info-home {
+    width: 98%;
+    font-size: 1.2em;
+  }
+  .info-home p {
+    font-size: 0.8em;
+  }
+  .counters p {
+    font-size: 1em;
+  }
+  .link-home {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1267px) {
+  .info-home {
+    width: 90%;
+    font-size: 1em;
+  }
+  .info-home h3, .info-home .h3 {
+    font-size: 1.2em;
+  }
+  .info-home p {
+    font-size: 1em;
+  }
+  .counters p {
+    font-size: 1.2em;
+  }
+}
 footer {
   display: flex;
   position: relative;
@@ -23736,16 +23798,18 @@ footer {
   justify-content: center;
   align-items: center;
   min-height: 200px;
-  border-top: 1px solid rgb(134, 134, 134);
   background-color: #333;
+  box-shadow: 0 -4px 6px -3px rgba(0, 0, 0, 0.9058823529);
   color: #fff;
   width: 100%;
-  margin-top: 20%;
+  margin-top: 40%;
 }
 
 .main-about {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -23776,14 +23840,14 @@ footer {
   width: 90%;
   text-align: left;
   margin: 4em;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 
 .text-about {
   width: 70%;
   margin: 0 auto;
   margin-top: 2em;
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-bottom: 2em;
   text-align: center;
   line-height: 1.8em;
@@ -23804,18 +23868,65 @@ footer {
   border-radius: 10px;
 }
 
+.places h3, .places .h3 {
+  margin: 1em;
+}
+
+.places ul {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  padding-bottom: 2em;
+  list-style: none;
+}
+
 .places p {
   width: 80%;
   margin: 0 auto;
 }
 
-.about-fedbacks {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 767px) {
+  .info-about {
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.6em;
+  }
+  .info-about {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.1em;
+  }
+  .places {
+    width: 85%;
+  }
+  .places p {
+    width: 90%;
+  }
 }
-
+@media screen and (min-width: 768px) and (max-width: 1267px) {
+  .info-about {
+    width: 100%;
+    font-size: 1em;
+    line-height: 1.6em;
+  }
+  .info-about {
+    width: 90%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.1em;
+  }
+  .places {
+    width: 85%;
+  }
+  .places p {
+    width: 90%;
+  }
+}
 .accordion {
   width: 90%;
   margin: 0 auto;
@@ -23828,7 +23939,7 @@ footer {
 
 .main-fedbacks {
   text-align: center;
-  margin-top: 3em;
+  margin-top: 5em;
   margin-bottom: 5em;
 }
 
@@ -23837,10 +23948,10 @@ footer {
 }
 
 .main-fedbacks .carousel-item {
-  height: 170px;
+  height: 220px;
   min-width: 480px;
   width: 480px;
-  min-height: 170px;
+  min-height: 220px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23856,11 +23967,12 @@ footer {
 }
 
 .carousel-text h3, .carousel-text .h3 {
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 
 .carousel-text p {
-  font-size: 1em;
+  font-size: 1.2em;
+  padding-bottom: 1em;
 }
 
 .main-fedbacks .carousel-item {
@@ -23871,6 +23983,27 @@ footer {
   display: block;
 }
 
+@media screen and (max-width: 767px) {
+  .main-fedbacks .carousel-item {
+    min-width: 300px;
+    height: 270px;
+    min-height: 270px;
+    width: 300px;
+  }
+  .carousel-text h3, .carousel-text .h3 {
+    font-size: 1.3em;
+  }
+  .carousel-text p {
+    font-size: 1em;
+    padding-bottom: 1em;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1267px) {
+  .main-fedbacks .carousel-item {
+    min-width: 380px;
+    width: 380px;
+  }
+}
 .main-work {
   width: 100%;
   display: flex;
@@ -23879,6 +24012,7 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
   margin-top: 2em;
 }
 
@@ -23889,27 +24023,37 @@ footer {
 
 .details-work {
   display: flex;
+  width: 90%;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  margin: 0 auto;
   margin-top: 2em;
   padding-bottom: 2em;
 }
 
+.details-work ul {
+  font-size: 1.1em;
+  padding: 10px;
+}
+
+.details-work ul li {
+  padding: 10px;
+}
+
 .text-work {
   width: 70%;
-  height: 340px;
+  margin: 0 auto;
+  height: auto;
   background-color: rgba(0, 0, 0, 0.9058823529);
-  padding: 10px;
   border-radius: 20px;
   border-right: 1px solid rgba(0, 0, 0, 0.6117647059);
   box-shadow: 1px 1px 1px 3px rgba(89, 168, 125, 0.1647058824);
   line-height: 1.5em;
+  padding-top: 10px;
 }
 
 .info-work {
   width: 80%;
+  font-size: 1.2em;
   text-align: center;
   padding: 0.5em;
   margin-top: 4em;
@@ -23917,9 +24061,29 @@ footer {
 }
 
 .redirect-work {
+  width: 80%;
+  margin: 0 auto;
   padding-top: 2em;
 }
 
+.text-work ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  padding: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .details-work {
+    flex-direction: column;
+  }
+  .text-work {
+    width: 70%;
+  }
+}
 .work-carousel {
   width: 100%;
   padding-bottom: 3em;
@@ -23927,12 +24091,12 @@ footer {
 }
 
 .work-carousel .carousel-item {
-  display: none; /* Garantir que apenas um item é mostrado por vez */
-  transition: opacity 0.5s ease-in-out; /* Transição suave entre slides */
+  display: none;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .work-carousel .carousel-item.active {
-  display: block;
+  display: flex;
   opacity: 1;
 }
 
@@ -23942,39 +24106,42 @@ footer {
   justify-content: center;
   text-align: center;
   padding: 20px;
-  height: 480px;
-  min-width: 400px;
-  width: 700px;
-  min-height: 170px;
+  width: 700px; /* Largura fixa */
+  height: 480px; /* Altura fixa para manter o padrão */
+  margin: 0 auto; /* Centraliza o conteúdo */
 }
 
 .carousel-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: 650px; /* Largura fixa */
+  height: 100%; /* Altura automática para manter a proporção */
+  max-height: 480px; /* Garante que não exceda a altura do item */
+  object-fit: cover; /* Cobre o espaço mantendo a centralização */
   border-radius: 10px;
 }
 
-.carousel-item {
-  display: none;
-}
-
-.carousel-item.active {
-  display: block;
-}
-
-/* Define uma cor personalizada para a seta da esquerda */
-.carousel-control-prev-icon {
-  background-color: rgba(255, 255, 255, 0.527); /* Altere para a cor desejada */
-  border-radius: 50%;
-}
-
-/* Define uma cor personalizada para a seta da direita */
+.carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: rgba(255, 255, 255, 0.7); /* Altere para a cor desejada */
+  background-color: rgba(255, 255, 255, 0.7);
   border-radius: 50%;
+  padding: 10px;
 }
 
+@media screen and (max-width: 767px) {
+  .carousel-item {
+    min-width: 300px;
+    width: 100%;
+    padding: 10px;
+    height: 350px; /* Altura menor para telas pequenas */
+  }
+  .carousel-item img {
+    width: 100%; /* Adapta a largura para telas menores */
+    max-height: 350px; /* Reduz a altura em telas pequenas */
+  }
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    font-size: 0.9em;
+  }
+}
 .main-info {
   width: 100%;
   display: flex;
@@ -23996,10 +24163,6 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 100%;
-}
-
-form {
   width: 100%;
 }
 
@@ -24033,11 +24196,18 @@ form {
   text-align: center;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 html, body {
   overflow-x: hidden;
 }
 
 body {
+  box-sizing: border-box;
   max-width: 100vw;
   width: 100vw;
   min-height: 100vh;
@@ -24053,6 +24223,10 @@ h3, .h3, h4, .h4 {
   color: #59a87d;
 }
 
+h4, .h4 {
+  font-size: 1.6em;
+}
+
 a {
   text-decoration: none;
   color: #59a87d;
@@ -24065,10 +24239,6 @@ a:hover {
 
 .important-words {
   color: #59a87d;
-}
-
-ul {
-  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */
