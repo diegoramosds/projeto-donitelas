@@ -10,8 +10,8 @@ const Footer = () => {
       <Container>
         <Row>
           <Col md={4}>
-            <h5>Sobre Nós</h5>
-            <p>Informações sobre a empresa ou site.</p>
+            <h5>Sobre</h5>
+            <p>Transformando espaços com <span className='important-words'> segurança </span>  e <span className='important-words'> excelência </span> em cada detalhe.</p>
           </Col>
           <Col md={4}>
             <h5>Links Úteis</h5>
@@ -23,13 +23,13 @@ const Footer = () => {
           </Col>
           <Col md={4}>
             <h5>Contato</h5>
-            <p><a href="mailto:exemple@gmail.com" target='_blank'>Email: contato@empresa.com</a></p>
-            <p><a href="tel:+55971999999999" target='_blank'>Telefone: (11) 1234-5678</a></p>
+            <p><a href="mailto:exemple@gmail.com" target='_blank'>Email: telasdoni@gmail.com</a></p>
+            <p><a href="tel:+55971999999999" target='_blank'>Telefone: (11)96857-9924</a></p>
           </Col>
         </Row>
         <Row className="mt-3">
           <Col className="text-center">
-            <small>&copy; 2024 Sua Empresa. Todos os direitos reservados.</small>
+            <small>&copy; 2024 DONI<span className='important-words'>TELAS</span>. Todos os direitos reservados.</small>
           </Col>
         </Row>
       </Container>

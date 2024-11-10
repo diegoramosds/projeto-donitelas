@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
 
 import emailjs from '@emailjs/browser';
+import { Link } from 'react-router-dom';
 
 function TextControls() {
     const [name, setName] = useState("");
@@ -23,7 +24,7 @@ function TextControls() {
             message: message
         };   
 
-        emailjs.send("service_fiqxtwp", "template_mg9f27p", templateParams, "B0mly15Z3WowbyQr")
+        emailjs.send("service_fiqxtwp", "template_mg9f27p", templateParams, "B0mlsy15Z3WowbyQr")
             .then(() => {
                 setName("");
                 setEmail("");
@@ -47,7 +48,7 @@ function TextControls() {
 
     return (
         <div className="env-form" bg="dark" data-bs-theme="dark">
-            <Form onSubmit={handleSubmit} >
+            <Form onSubmit={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formName">
                     <Form.Label>Seu nome</Form.Label>
                     <Form.Control
@@ -57,6 +58,7 @@ function TextControls() {
                         value={name}
                         disabled={loading}
                         required
+                        className="form-control"
                     />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formEmail">
@@ -68,6 +70,7 @@ function TextControls() {
                         value={email}
                         disabled={loading}
                         required
+                        className="form-control"
                     />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formMessage">
@@ -79,6 +82,7 @@ function TextControls() {
                         value={message}
                         disabled={loading}
                         required
+                        className="form-control"
                     />
                 </Form.Group>
                 <div className="loading-container">
@@ -91,7 +95,8 @@ function TextControls() {
                 </div>
             </Form>
             <div className="text-information"> 
-                <p>oii</p>
+                <p>Estou à disposição para responder o quanto antes. Agradeço seu interesse! Enquanto isso, <Link to="/work"> CLIQUE AQUI </Link>
+                    e confira meus serviços e veja como posso ajudar você da melhor forma.</p>
             </div>
         </div>
     );
