@@ -12,101 +12,40 @@ import work8 from '../../img/work8.jpg';
 import work9 from '../../img/work9.jpg';
 import work10 from '../../img/work10.jpg';
 
+const captions = [
+  { title: "Campo", description: "Montagem completa de campo com redes." },
+  { title: "Campo", description: "Montagem completa de campo com acabamento de madeira e redes." },
+  { title: "Campo society", description: "Montagem completa de campo society com instalação de telas." },
+  { title: "Quadra esportiva", description: "Instalação de telas e acabamentos gerais." },
+  { title: "Cerca", description: "Instalação de cerca com acabamento em madeira." },
+  { title: "Quadra esportiva", description: "Montagem completa de quadra esportiva e instalação de telas." },
+  { title: "Tela", description: "Instalação de tela e acabamentos em campo society." },
+  { title: "Cerca", description: "Instalação de cerca com canaleta mourão de concreto." },
+  { title: "Cerca", description: "Instalação de cerca com canaleta mourão de madeira." },
+  { title: "Tela", description: "Instalação de tela e acabamentos." },
+];
 
 function WorkCarousel() {
   return (
-    <div className='work-carousel'>
+    <div className="work-carousel">
       <h3>Alguns serviços feitos</h3>
       <Carousel slide={false}>
-        <Carousel.Item>
-          <img src={work1} alt="" />
-          <Carousel.Caption>
-            <h3>Campo</h3>
-            <p>Montagem completa de campo com redes.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-        <img src={work2} alt="" />
-          <Carousel.Caption>
-            <h3>Campo</h3>
-            <p>Montagem completa de campo com acabamento de madeira e redes.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-        <img src={work3} alt="" />
-          <Carousel.Caption>
-            <h3>Cmapo society</h3>
-            <p>
-              Montagem completa de campo society com instalação de telas.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-        <img src={work4} alt="" />
-          <Carousel.Caption>
-            <h3>Quadra esportiva</h3>
-            <p>
-              Instalação de telas e acabamentos gerais.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-        <img src={work5} alt="" />
-          <Carousel.Caption>
-            <h3>Cerca</h3>
-            <p>
-             Instalação de cerca com acabamento em madeira.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-        <img src={work6} alt="" />
-          <Carousel.Caption>
-            <h3>Quadra esportiva</h3>
-            <p>
-              Montagem completa de quadra esportiva e instalação de telas.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-        <img src={work7} alt="" />
-          <Carousel.Caption>
-            <h3>Tela</h3>
-            <p>
-              Instalação de tela e acabamentos em campo society
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-        <img src={work8} alt="" />
-          <Carousel.Caption>
-            <h3>Cerca</h3>
-            <p>
-              Instalação de cerca com canaleta mourão de concreto.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-        <img src={work9} alt="" />
-          <Carousel.Caption>
-            <h3>Cerca</h3>
-            <p>
-            Instalação de cerca com canaleta mourão de madeira.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-        <img src={work10} alt="" />
-          <Carousel.Caption>
-            <h3>Tela</h3>
-            <p>
-            Instalação de tela e acabamentos.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
+        {captions.map((caption, index) => (
+          <Carousel.Item key={index}>
+            <img
+              src={[work1, work2, work3, work4, work5, work6, work7, work8, work9, work10][index]}
+              alt={caption.title}
+            />
+            {/* <Carousel.Caption className='caption'>
+              <h3>{caption.title}</h3>
+              <p>{caption.description}</p>
+            </Carousel.Caption> */}
+          </Carousel.Item>
+        ))}
       </Carousel>
     </div>
   );
 }
 
 export default WorkCarousel;
+
