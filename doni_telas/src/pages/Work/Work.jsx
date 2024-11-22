@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom"
-import IndividualIntervalsExample from "../../components/Work-carousel/WorkCarousel";
+import WorkCarousel from "../../components/Work-carousel/WorkCarousel";
 
 const Work = () => {
   return (
@@ -8,42 +7,42 @@ const Work = () => {
       <div className="details-work">
         <div className="text-work">
           <h4>Telas</h4>
-          <p>Ofereço uma variedade de opções para instalação e manutenção de telas:</p>
+          <p>Instalação e manutenção de telas:</p>
              <ul>
-                <li>Instalação de telas de proteção para áreas residenciais e comerciais</li>
-                <li>Manutenção preventiva e reparo de telas desgastadas</li>
-                <li>Modelos de telas sob medida para diferentes espaços</li>
-                <li>Serviços de ajuste e fixação de telas</li>
+                <li>Instalação de telas de proteção para áreas residenciais e comerciais.</li>
+                <li>Manutenção preventiva e reparo de telas desgastadas.</li>
+                <li>Modelos de telas sob medida para diferentes espaços.</li>
+                <li>Serviços de ajuste e fixação de telas em vários tipos de ambiente.</li>
              </ul>
         </div>
         <div className="text-work">
         <h4>Cercas</h4>
           <p>Soluções para cercas de segurança:</p>
         <ul>
-          <li>Instalação de cercas de proteção em áreas industriais e residenciais</li>
-          <li>Opções de cercas personalizadas para proteção</li>
-          <li>Reparos e reforços para cercas de madeira e metal</li>
-          <li>Instalação de cercas para áreas externas e jardins</li>
+          <li>Instalação de cercas de proteção em áreas industriais e residenciais.</li>
+          <li>Opções de cercas personalizadas para proteção.</li>
+          <li>Reparos e reforços para cercas de madeira e metal.</li>
+          <li>Instalação de cercas para áreas externas e jardins.</li>
         </ul>
         </div>
         <div className="text-work">
         <h4>Grades</h4>
         <p>Instalação de grades:</p>
           <ul>
-            <li>Grades de segurança para janelas, portas e varandas</li>
-            <li>Grades decorativas personalizadas em diversos modelos</li>
-            <li>Reforço e manutenção de grades já instaladas</li>
-            <li>Instalação de grades para áreas comerciais e residenciais</li>
+            <li>Grades de segurança para janelas, portas e varandas.</li>
+            <li>Grades decorativas personalizadas em diversos modelos.</li>
+            <li>Reforço e manutenção de grades já instaladas.</li>
+            <li>Instalação de grades para áreas comerciais e residenciais.</li>
           </ul>
         </div>
         <div className="text-work">
           <h4>Quadras esportivas</h4>
         <p>Serviços especializados para quadras:</p>
           <ul>
-            <li>Instalação de telas e redes de proteção para quadras esportivas</li>
-            <li>Montagem de cercas e divisórias em quadras</li>
-            <li>Manutenção e reparos em redes esportivas</li>
-            <li>Personalização de redes e cercas para quadras de diferentes esportes</li>
+            <li>Instalação de telas e redes de proteção para quadras esportivas.</li>
+            <li>Montagem de cercas e divisórias em quadras.</li>
+            <li>Manutenção e reparos em redes esportivas.</li>
+            <li>Personalização de redes e telas para quadras de diferentes esportes.</li>
           </ul>
         </div>
       </div>
@@ -55,7 +54,7 @@ const Work = () => {
       </div>
 
       <div>
-       <IndividualIntervalsExample />
+       <WorkCarousel />
       </div>
 
       <div className="">
@@ -64,9 +63,9 @@ const Work = () => {
 
       <div className="redirect-work">
         <p>Transforme seu ambiente com serviços de alta qualidade e acabamento impecável. 
-          Para mais informações, 
+          Para mais informações,  
           <a href="https://wa.me/5511968579924?text=Olá,%20gostaria%20de%20solitar%20um%20orçamento" target="_blank"> 
-           CLIQUE AQUI </a>
+            CLIQUE AQUI </a>
            e  fale diretamente comigo!</p>
       </div>
     </div>

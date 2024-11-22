@@ -1,15 +1,14 @@
-import UncontrolledExample from '../../components/About-carousels/AboutCarousels'
-import TextCarousel from '../../components/About-carousels/AboutCarousels'
-import IndividualIntervalsExample from '../../components/About-carousels/AboutCarousels'
 import AllCollapseExample from '../../components/Accordion/Accordion'
 import '../../scss/style.scss'
 
-import AOS from 'aos';
+
 import PhtotoAbout from '../../img/photo-about.png'
 
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom'
-import { useEffect } from 'react'
+import AccordionAbout from '../../components/Accordion/Accordion';
+import TextCarousel from '../../components/About-carousels/AboutCarousels';
+
 
 const About = () => {
 
@@ -63,7 +62,7 @@ const About = () => {
           <TextCarousel />
         </div>
 
-      <AllCollapseExample />     
+        <AccordionAbout />   
     </div>
   )
 }
