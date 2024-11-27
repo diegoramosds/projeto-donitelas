@@ -18,10 +18,10 @@ function AccordionAbout() {
       <Accordion.Item eventKey="1">
         <Accordion.Header>Quanto é cobrado no orçamento?</Accordion.Header>
         <Accordion.Body>
-          O orçamento é totalmente <span className='important-words'> gratuito </span>  e sem compromisso. Nosso objetivo é que você 
+          O orçamento é totalmente <span className='important-words'> gratuito </span>  e sem compromisso. Meu objetivo é que você 
           tenha clareza sobre o que será feito e 
           quanto vai investir, permitindo que tome uma decisão <span className='important-words'> informada </span>  e
-          <span className='important-words'> segura </span>.
+          <span className='important-words'> segura</span>.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="2">
@@ -46,7 +46,7 @@ function AccordionAbout() {
       <Accordion.Item eventKey="4">
         <Accordion.Header>Quais locais você trabalha?</Accordion.Header>
         <Accordion.Body>
-        Atendemos diversas localidades na <span className='important-words'> região de São Paulo </span> , 
+        Atendo em diversas localidades na <span className='important-words'> região de São Paulo </span> , 
         incluindo cidades próximas como Sorocaba, Cotia, Mairinque, entre várias outras. 
         Se sua cidade não está na lista, <span className='important-words'> entre em contato </span>  para verificar a 
         possibilidade de atendimento e esclarecer dúvidas sobre nossa cobertura.

@@ -4,7 +4,6 @@ import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
 
 import emailjs from '@emailjs/browser';
-import { Link } from 'react-router-dom';
 
 function TextControls() {
     const [name, setName] = useState("");
@@ -94,10 +93,6 @@ function TextControls() {
                     {error && <p className="error-message">{error}</p>}
                 </div>
             </Form>
-            <div className="text-information"> 
-                <p>Estou à disposição para responder o quanto antes. Agradeço seu interesse! Enquanto isso, <Link to="/work"> CLIQUE AQUI </Link>
-                    e confira meus serviços e veja como posso ajudar você da melhor forma.</p>
-            </div>
         </div>
     );
 }

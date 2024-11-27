@@ -14,7 +14,7 @@ const Footer = () => {
             <p>Transformando espaços com <span className='important-words'> segurança </span>  e <span className='important-words'> excelência </span> em cada detalhe.</p>
           </Col>
           <Col md={4}>
-            <h5>Links Úteis</h5>
+            <h5>Páginas</h5>
             <ul className="list-unstyled">
               <li><Link to="/" className="text-white">Home</Link></li>
               <li><Link to="/about" className="text-white">Sobre</Link></li>

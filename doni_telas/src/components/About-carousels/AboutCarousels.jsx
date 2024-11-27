@@ -58,12 +58,6 @@ function TextCarousel() {
 </Carousel.Item>
 <Carousel.Item>
   <div className="carousel-text">
-    <h3>Diego</h3>
-    <p>Atendimento incrível e resultado acima das expectativas. Parabéns pelo ótimo serviço!</p>
-  </div>
-</Carousel.Item>
-<Carousel.Item>
-  <div className="carousel-text">
     <h3>Bruno</h3>
     <p>Serviço excelente, com atenção aos detalhes e um acabamento impecável.</p>
   </div>

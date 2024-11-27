@@ -57,10 +57,6 @@ const Work = () => {
        <WorkCarousel />
       </div>
 
-      <div className="">
-        <p></p>
-      </div>
-
       <div className="redirect-work">
         <p>Transforme seu ambiente com serviços de alta qualidade e acabamento impecável. 
           Para mais informações,  
