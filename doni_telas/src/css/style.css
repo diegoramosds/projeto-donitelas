@@ -23890,7 +23890,7 @@ footer {
     line-height: 1.6em;
   }
   .info-about {
-    width: 90%;
+    width: 95%;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -23911,7 +23911,7 @@ footer {
     line-height: 1.6em;
   }
   .info-about {
-    width: 90%;
+    width: 95%;
     flex-direction: column;
     justify-content: center;
     text-align: center;
@@ -24040,7 +24040,7 @@ footer {
 .text-work {
   width: 70%;
   margin: 0 auto;
-  height: auto;
+  height: 400px;
   background-color: rgba(0, 0, 0, 0.9058823529);
   border-radius: 20px;
   border-right: 1px solid rgba(0, 0, 0, 0.6117647059);
@@ -24056,7 +24056,7 @@ footer {
 }
 
 .info-work {
-  width: 80%;
+  width: 85%;
   font-size: 1.2em;
   text-align: center;
   padding: 0.5em;
@@ -24087,6 +24087,20 @@ footer {
   }
   .text-work {
     width: 70%;
+  }
+  .info-work {
+    width: 98%;
+  }
+  .redirect-work {
+    width: 99%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1267px) {
+  .details-work {
+    flex-direction: column;
+  }
+  .text-work {
+    width: 40%;
   }
 }
 .work-carousel {
@@ -24181,7 +24195,7 @@ footer {
 }
 
 form {
-  width: 70%;
+  width: 60%;
 }
 
 .loading-container {
@@ -24189,6 +24203,8 @@ form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 70%;
+  margin: 0 auto;
 }
 
 .loading-container .error-message {
@@ -24200,18 +24216,14 @@ form {
 }
 
 .error-message, .success-message {
-  width: 40%;
+  width: 20%;
+  height: auto;
   text-align: center;
   margin: 0 auto;
   border-radius: 5%;
   font-weight: bold;
   background-color: #000;
   box-shadow: 1px 1px 1px 3px rgba(89, 168, 125, 0.1647058824);
-  padding: 2px;
-}
-
-.text-information {
-  text-align: center;
 }
 
 * {

@@ -21,7 +21,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 2em;
-    padding-bottom: 2em;   
+    padding-bottom: 2em;
 }
 
 .details-work ul {
@@ -34,7 +34,7 @@
 .text-work {
     width: 70%;
     margin: 0 auto;
-    height: auto;
+    height: 400px;
     background-color: #000000e7;
     border-radius: 20px;
     border-right: 1px solid #0000009c;
@@ -77,16 +77,21 @@
     .details-work {
         flex-direction: column;  
     }
-
     .text-work {
     width: 70%;
 }
 .info-work {
-    width: 95%;
+    width: 98%;
 }
 .redirect-work {
-    width: 98%;
+    width: 99%;
 }}
 
   @media screen and (min-width: 768px) and (max-width: 1267px) {
+    .details-work {
+        flex-direction: column;  
+    }
+    .text-work {
+        width: 40%;
+    }
   }

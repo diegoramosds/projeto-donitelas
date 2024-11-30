@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Spinner from 'react-bootstrap/Spinner';
 
 import emailjs from '@emailjs/browser';
+import { Link } from 'react-router-dom';
 
 function TextControls() {
     const [name, setName] = useState("");
@@ -23,7 +24,7 @@ function TextControls() {
             message: message
         };   
 
-        emailjs.send("service_fiqxtwp", "template_mg9f27p", templateParams, "B0mly15Z3WowbyQr")
+        emailjs.send("service_fiqxtwp", "template_mg9f27p", templateParams, "B0msy15Z3WowbyQr")
             .then(() => {
                 setName("");
                 setEmail("");
@@ -93,6 +94,7 @@ function TextControls() {
                     {error && <p className="error-message">{error}</p>}
                 </div>
             </Form>
+            <p>Estou à disposição para responder o quanto antes. Agradeço seu interesse! Enquanto isso, <Link to="/work"> CLIQUE AQUI </Link> e veja alguns serviços.</p>
         </div>
     );
 }
