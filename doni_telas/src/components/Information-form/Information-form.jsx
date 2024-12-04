@@ -24,7 +24,7 @@ function TextControls() {
             message: message
         };   
 
-        emailjs.send("service_fiqxtwp", "template_mg9f27p", templateParams, "B0msy15Z3WowbyQr")
+        emailjs.send("service_fiqxtwp", "template_mg9f27p", templateParams, "B0mlsy15Z3WowbyQr")
             .then(() => {
                 setName("");
                 setEmail("");
