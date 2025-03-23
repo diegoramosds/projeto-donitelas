@@ -9,6 +9,24 @@
 @import 'Information.scss';
 @import 'Form-information.scss';
 
+// Cores Principais:
+
+// Verde Escuro: emerald-900 (#064e3b)
+// Verde Médio: emerald-700 (#047857)
+// Verde Claro: emerald-500 (#10b981)
+// Verde Suave: emerald-300 (#6ee7b7)
+// Verde Muito Claro: emerald-50 (#ecfdf5)
+// Cores Neutras:
+
+// Cinza Escuro: gray-900 (#111827)
+// Cinza Médio: gray-800 (#1f2937)
+// Cinza Claro: gray-600 (#4b5563)
+// Cinza Muito Claro: gray-400 (#9ca3af)
+// Cores de Apoio:
+
+// Branco: white (#ffffff)
+// Preto com transparência: black/50 (rgba(0,0,0,0.5))
+
 * {
     padding: 0;
     margin:0;
@@ -17,20 +35,14 @@
 
 html, body {
     overflow-x: hidden;
- }
- 
+}
+
 body {
+    background: linear-gradient(#ffffff, #ddfaec);
     max-width: 100vw;
     width: 100vw;
     min-height: 100vh;
-    background-image: url("../img/photo-main.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
 }
-
 h3, h4 {
     color: #59a87d;
 }
