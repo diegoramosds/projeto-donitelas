@@ -23706,10 +23706,21 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 20px;
   height: 400px;
   background: linear-gradient(to left, #064e3b, #064e3b);
   color: #ffffff;
   padding: 20px;
+}
+
+.primary h1, .primary .h1 {
+  font-size: 3.5em;
+  font-weight: bolder;
+  margin-bottom: 0.5em;
+}
+
+.primary p {
+  font-size: 1.2em;
 }
 
 .introduction-home {
@@ -23723,6 +23734,7 @@ textarea.form-control-lg {
   justify-content: center;
   gap: 20px;
   list-style: none;
+  transform: t;
 }
 
 .options p {
@@ -23733,16 +23745,25 @@ textarea.form-control-lg {
   font-size: 1.3em;
 }
 
+.options p:hover {
+  background-color: rgba(16, 185, 129, 0.8705882353);
+  box-shadow: #047857 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
 .options :nth-child(2) {
   background-color: rgba(110, 231, 183, 0.1764705882);
   border: 1px solid #9ca3af;
 }
 
+.options :nth-child(2):hover {
+  background-color: rgba(110, 231, 183, 0.2745098039);
+}
+
 .info-profile {
   display: flex;
+  gap: 20px;
   width: 90%;
   margin-top: 4em;
-  gap: 30px;
 }
 
 .board-details {
