@@ -1,4 +1,4 @@
-import { Users, Shield, Award, ArrowRight } from 'lucide-react';
+import { Users, Shield, Award, ArrowRight, Phone } from 'lucide-react';
 import CountUp from 'react-countup';
 import work10 from '../../img/work10.jpg';
 
@@ -93,10 +93,25 @@ const Home = () => {
                 </button>
             </div>
           </div>
-
+          <div className='see-all-services'>
+              <button>
+                <span>Saiba mais</span>
+                <span><ArrowRight /></span>
+                </button>
+            </div>
+          <div>
+        </div>
         </div>
       </div>
+
+      <div className='contact'>
+        <div className='redirect-zap'>
+          <h1>Solicite um Orçamento Grátis</h1>
+          <p>Entre em contato por WhatsApp para solicitar um orçamento sem compromisso ou agende uma visita técnica.</p>
+          <button> <span><Phone /> </span> <span>Chamar no WhataApp</span></button>
+        </div>
       </div>
+    </div>
   )
 }
 
