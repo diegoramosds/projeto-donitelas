@@ -8,6 +8,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import { useEffect, useRef, useState } from "react";
 
+import { motion } from "motion/react"
 
 const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -35,12 +36,15 @@ const NavBar = () => {
   }, []);
   return (
     <div>
-         <Navbar ref={navbarRef} expanded={expanded} expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
+      <Navbar ref={navbarRef} expanded={expanded} expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
       <Container>
         <Navbar.Brand as={Link} to="/"><strong>DONI<span className="important-words">TELAS</span></strong></Navbar.Brand>
         <Navbar.Toggle onClick={toggleMenu} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
+            <motion.nav
+            animate={{ opacity: 1, y: "-20" }}>
+            </motion.nav>
             <Nav.Link as={Link} to="/" onClick={closeMenu}>Home</Nav.Link>
             <Nav.Link as={Link} to="/about" onClick={closeMenu}>Sobre</Nav.Link>
             <Nav.Link as={Link} to="/work" onClick={closeMenu}>Serviços</Nav.Link>
