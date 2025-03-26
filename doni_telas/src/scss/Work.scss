@@ -1,97 +1,45 @@
 .main-work {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 2em;
-}
-
-.main-work h3 {
-    margin: 1em;
-    padding: 10px;
-}
-
-.details-work {
-    display: flex;
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2em;
-    padding-bottom: 2em;
-}
-
-.details-work ul {
-    font-size: 1.1em;
-    padding: 10px;
-}
-.details-work ul li {
-    padding: 10px;
-}
-.text-work {
-    width: 70%;
-    margin: 0 auto;
-    height: 400px;
-    background-color: #000000e7;
-    border-radius: 20px;
-    border-right: 1px solid #0000009c;
-    box-shadow: 1px 1px 1px 3px #59a87d2a;
-    line-height: 1.5em;
-    padding-top: 10px;
-}
-.text-work P  {
-   font-size: 1.1em;
-   color: #59a87d;
-   margin-top: 10px;
-}
-.info-work {
-    width: 85%;
-    font-size: 1.2em;
-    text-align: center;
-    padding: .5em;
-    margin-top: 4em;
-    padding-bottom: 4em;
-}
-
-.redirect-work {
-    width: 60%;
-    font-size: 1.1em;
-    margin: 0 auto;
-    padding-top: 2em;
-}
-
-.text-work ul {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
-    list-style: none;
-    padding: 10px;
+    margin: 0 auto;
 }
+
+.primary-work {
+    width: 100%;
+    min-height: 190px;
+    background-color: #064e3b;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+.primary-work h1 {
+    font-weight: bolder;
+    font-size: 3em;
+    margin: 5px;
+}
+.primary-work p {
+    color: #d1fce8;
+    font-size: 1.3em;
+}
+
+
+.work-cards {
+width: 90%;
+display: flex;
+gap: 20px;
+}
+
 
 @media screen and (max-width: 767px) {
-    .details-work {
-        flex-direction: column;  
-    }
-    .text-work {
-    width: 70%;
 }
-.info-work {
-    width: 98%;
-}
-.redirect-work {
-    width: 99%;
-}}
 
   @media screen and (min-width: 768px) and (max-width: 1267px) {
-    .details-work {
-        flex-direction: column;  
-    }
-    .text-work {
-        width: 40%;
-    }
+
   }

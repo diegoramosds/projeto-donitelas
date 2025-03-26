@@ -1,68 +1,254 @@
-import WorkCarousel from "../../components/Work-carousel/WorkCarousel";
+import { motion } from "motion/react"
+
+import work1 from '../../img/work1.jpg';
+import work2 from '../../img/work2.jpg';
+import work3 from '../../img/work3.jpg';
+import work4 from '../../img/work4.jpg';
+import work5 from '../../img/work5.jpg';
+import work6 from '../../img/work6.jpg';
+import work7 from '../../img/work7.jpg';
+import work8 from '../../img/work8.jpg';
+import work9 from '../../img/work9.jpg';
+import work10 from '../../img/work10.jpg';
+
+import { ArrowRight } from "lucide-react";
 
 const Work = () => {
   return (
     <div className="main-work">
-       <h3>Serviços prestados</h3>
-      <div className="details-work">
-        <div className="text-work">
-          <h4>Telas</h4>
-          <p>Instalação e manutenção de telas:</p>
-             <ul>
-                <li>Instalação de telas de proteção para áreas residenciais e comerciais.</li>
-                <li>Manutenção preventiva e reparo de telas desgastadas.</li>
-                <li>Modelos de telas sob medida para diferentes espaços.</li>
-                <li>Serviços de ajuste e fixação de telas em vários tipos de ambiente.</li>
-             </ul>
-        </div>
-        <div className="text-work">
-        <h4>Cercas</h4>
-          <p>Soluções para cercas de segurança:</p>
-        <ul>
-          <li>Instalação de cercas de proteção em áreas industriais e residenciais.</li>
-          <li>Opções de cercas personalizadas para proteção.</li>
-          <li>Reparos e reforços para cercas de madeira e metal.</li>
-          <li>Instalação de cercas para áreas externas e jardins.</li>
-        </ul>
-        </div>
-        <div className="text-work">
-        <h4>Grades</h4>
-        <p>Instalação de grades:</p>
-          <ul>
-            <li>Grades de segurança para janelas, portas e varandas.</li>
-            <li>Grades decorativas personalizadas em diversos modelos.</li>
-            <li>Reforço e manutenção de grades já instaladas.</li>
-            <li>Instalação de grades para áreas comerciais e residenciais.</li>
-          </ul>
-        </div>
-        <div className="text-work">
-          <h4>Quadras esportivas</h4>
-        <p>Serviços especializados para quadras:</p>
-          <ul>
-            <li>Instalação de telas e redes de proteção para quadras esportivas.</li>
-            <li>Montagem de cercas e divisórias em quadras.</li>
-            <li>Manutenção e reparos em redes esportivas.</li>
-            <li>Personalização de redes e telas para quadras de diferentes esportes.</li>
-          </ul>
-        </div>
-      </div>
+       <div className="primary-work">
+        <h1>Projetos realizados</h1>
+        <p>Conheça alguns dos meus projetos realizados com excelência e qualidade.</p>
+       </div>
 
-      <div className="info-work">
-        <p>Cada serviço que ofereço é cuidadosamente planejado e adaptado às <span className="important-words"> características do ambiente </span>
-           e às preferências de nossos clientes,
-           sempre com foco em resultados que garantam <span className="important-words"> segurança </span>  e <span className="important-words"> satisfação </span>.</p>
-      </div>
+       <div className="service-details">
+         <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="service-cards"
+            >
+            <div className='service-images'>
+                          <img src={work1} alt="" />
+                          </div>
+                        <div className='text-details'>
+                          <h1>
+                            Telas de Proteção
+                          </h1>
+                          <p>Proteja crianças e animais com nossas telas de segurança para janelas, sacadas e varandas</p>
+                        </div>
+                        <div className='learn-more'>
+                          <button>
+                            <span>Saiba mais</span>
+                            <span><ArrowRight /></span>
+                            </button>
+                        </div>
+            </motion.div>
+            <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="service-cards"
+            >
+            <div className='service-images'>
+                          <img src={work2} alt="" />
+                          </div>
+                        <div className='text-details'>
+                          <h1>
+                            Telas de Proteção
+                          </h1>
+                          <p>Proteja crianças e animais com nossas telas de segurança para janelas, sacadas e varandas</p>
+                        </div>
+                        <div className='learn-more'>
+                          <button>
+                            <span>Saiba mais</span>
+                            <span><ArrowRight /></span>
+                            </button>
+                        </div>
+            </motion.div>
+            <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="service-cards"
+            >
+            <div className='service-images'>
+                          <img src={work3} alt="" />
+                          </div>
+                        <div className='text-details'>
+                          <h1>
+                            Telas de Proteção
+                          </h1>
+                          <p>Proteja crianças e animais com nossas telas de segurança para janelas, sacadas e varandas</p>
+                        </div>
+                        <div className='learn-more'>
+                          <button>
+                            <span>Saiba mais</span>
+                            <span><ArrowRight /></span>
+                            </button>
+                        </div>
+            </motion.div>
 
-      <div>
-       <WorkCarousel />
-      </div>
+            <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+            className="service-cards"
+            >
+            <div className='service-images'>
+                          <img src={work4} alt="" />
+                          </div>
+                        <div className='text-details'>
+                          <h1>
+                            Telas de Proteção
+                          </h1>
+                          <p>Proteja crianças e animais com nossas telas de segurança para janelas, sacadas e varandas</p>
+                        </div>
+                        <div className='learn-more'>
+                          <button>
+                            <span>Saiba mais</span>
+                            <span><ArrowRight /></span>
+                            </button>
+                        </div>
+            </motion.div>
 
-      <div className="redirect-work">
-        <p>Transforme seu ambiente com serviços de alta qualidade e acabamento impecável. 
-          Para mais informações,  
-          <a href="https://wa.me/5511968579924?text=Olá,%20gostaria%20de%20solitar%20um%20orçamento" target="_blank"> 
-            CLIQUE AQUI </a>
-           e  fale diretamente comigo!</p>
+            <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.9 }}
+            className="service-cards"
+            >
+            <div className='service-images'>
+                          <img src={work5} alt="" />
+                          </div>
+                        <div className='text-details'>
+                          <h1>
+                            Telas de Proteção
+                          </h1>
+                          <p>Proteja crianças e animais com nossas telas de segurança para janelas, sacadas e varandas</p>
+                        </div>
+                        <div className='learn-more'>
+                          <button>
+                            <span>Saiba mais</span>
+                            <span><ArrowRight /></span>
+                            </button>
+                        </div>
+            </motion.div>
+
+            <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1 }}
+            className="service-cards"
+            >
+            <div className='service-images'>
+                          <img src={work6} alt="" />
+                          </div>
+                        <div className='text-details'>
+                          <h1>
+                            Telas de Proteção
+                          </h1>
+                          <p>Proteja crianças e animais com nossas telas de segurança para janelas, sacadas e varandas</p>
+                        </div>
+                        <div className='learn-more'>
+                          <button>
+                            <span>Saiba mais</span>
+                            <span><ArrowRight /></span>
+                            </button>
+                        </div>
+            </motion.div>
+
+            <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
+            className="service-cards"
+            >
+            <div className='service-images'>
+                          <img src={work7} alt="" />
+                          </div>
+                        <div className='text-details'>
+                          <h1>
+                            Telas de Proteção
+                          </h1>
+                          <p>Proteja crianças e animais com nossas telas de segurança para janelas, sacadas e varandas</p>
+                        </div>
+                        <div className='learn-more'>
+                          <button>
+                            <span>Saiba mais</span>
+                            <span><ArrowRight /></span>
+                            </button>
+                        </div>
+            </motion.div>
+
+            <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.5 }}
+            className="service-cards"
+            >
+            <div className='service-images'>
+                          <img src={work8} alt="" />
+                          </div>
+                        <div className='text-details'>
+                          <h1>
+                            Telas de Proteção
+                          </h1>
+                          <p>Proteja crianças e animais com nossas telas de segurança para janelas, sacadas e varandas</p>
+                        </div>
+                        <div className='learn-more'>
+                          <button>
+                            <span>Saiba mais</span>
+                            <span><ArrowRight /></span>
+                            </button>
+                        </div>
+            </motion.div>
+
+            <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.7 }}
+            className="service-cards"
+            >
+            <div className='service-images'>
+                          <img src={work9} alt="" />
+                          </div>
+                        <div className='text-details'>
+                          <h1>
+                            Telas de Proteção
+                          </h1>
+                          <p>Proteja crianças e animais com nossas telas de segurança para janelas, sacadas e varandas</p>
+                        </div>
+                        <div className='learn-more'>
+                          <button>
+                            <span>Saiba mais</span>
+                            <span><ArrowRight /></span>
+                            </button>
+                        </div>
+            </motion.div>
+
+            <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.9 }}
+            className="service-cards"
+            >
+            <div className='service-images'>
+                          <img src={work10} alt="" />
+                          </div>
+                        <div className='text-details'>
+                          <h1>
+                            Telas de Proteção
+                          </h1>
+                          <p>Proteja crianças e animais com nossas telas de segurança para janelas, sacadas e varandas</p>
+                        </div>
+                        <div className='learn-more'>
+                          <button>
+                            <span>Saiba mais</span>
+                            <span><ArrowRight /></span>
+                            </button>
+                        </div>
+            </motion.div>
       </div>
     </div>
   )
