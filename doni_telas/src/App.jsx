@@ -17,21 +17,21 @@ function App() {
 
   return (
     <>
-     <BrowserRouter>
-     <ScrollToTop />
-     <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/about" element={<About />} />
-        <Route path="/work" element={<Work />} />
-        <Route path="/information" element={<Information />} />
-          {/* <Route index element={<Home />} /> */}
-          {/* <Route path="*" element={<NoPage />} /> */}
-        
-      </Routes>
-      <Footer />
   
-    </BrowserRouter>
+        <BrowserRouter>
+        <ScrollToTop />
+        <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />}/>
+            <Route path="/about" element={<About />} />
+            <Route path="/work" element={<Work />} />
+            <Route path="/information" element={<Information />} />
+              {/* <Route index element={<Home />} /> */}
+              {/* <Route path="*" element={<NoPage />} /> */}
+          </Routes>
+          <Footer />
+        </BrowserRouter>
+
     </>
   )
 }
