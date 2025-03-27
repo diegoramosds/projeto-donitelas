@@ -1,0 +1,70 @@
+
+.form-message{
+  width: 55%;
+  min-height: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: #63636333 0px 2px 8px 0px;
+}
+.form-message input, .form-message textarea {
+  padding: .9em;
+  transition: border 0.1s ease-in-out;
+}
+.form-message textarea {
+min-height: 150px;
+}
+.form-message input::placeholder, .form-message textarea::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
+}
+  .form-message input:focus , .form-message textarea:focus{
+    border: 2px solid #10b981;
+    box-shadow: none;
+}
+.form-message label{
+color: #1f2937;
+font-weight: 500;
+}
+.form-message h3{
+color: #111827;
+font-weight: bolder;
+text-align: center;
+}
+.loading-container {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100%;
+margin: 0 auto;
+}
+.loading-container button{
+color: #ffffff;
+width: 100%;
+background-color: #047857;
+font-weight: bold;
+margin-top: 1em;
+padding: 10px;
+font-size: .9em;
+}
+.loading-container button:hover{
+background-color: #046d4f;
+}
+.error-message, .success-message {
+    width: 50%;
+    height: auto;
+    text-align: center;
+    padding: .8em;
+    margin: 0 auto;
+    margin-top: 2em;
+    border-radius: 5%;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: #63636333 0px 2px 8px 0px;
+    color: #1f2937;
+  }
