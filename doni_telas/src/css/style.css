@@ -23841,7 +23841,7 @@ textarea.form-control-lg {
   display: flex;
   max-width: 100%;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
   gap: 40px;
   margin: 0 auto;
@@ -23849,23 +23849,24 @@ textarea.form-control-lg {
 
 .service-cards {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   overflow: hidden;
   position: relative;
   width: 430px;
   gap: 10px;
-  height: 520px;
+  min-height: 520px;
+  max-height: 1000px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: #ffffff;
   border-radius: 20px;
   margin-top: 3em;
+  word-wrap: break-word;
+  transition: max-height 6s ease-in-out;
 }
 
 .service-cards:hover .learn-more button {
-  color: #ffffff;
-  background-color: #044130;
+  background-color: rgba(205, 252, 229, 0.5490196078);
 }
 
 .service-images {
@@ -23905,16 +23906,20 @@ textarea.form-control-lg {
   justify-content: space-between;
   align-items: center;
   color: #064e3b;
-  font-weight: bold;
+  font-weight: 600;
   border: 1px solid #064e3b;
   background-color: transparent;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   text-align: left;
   border-radius: 5px;
-  padding: 8px;
+  padding: 6px;
   width: 90%;
   margin-bottom: 2em;
   transition: all 0.3s ease-in-out;
+}
+
+.learn-more button:hover {
+  color: #1f2937;
 }
 
 .learn-more button span {
@@ -24359,51 +24364,58 @@ footer {
   font-size: 1.3em;
 }
 
-.work-cards {
-  width: 90%;
-  display: flex;
-  gap: 20px;
+.service-features {
+  text-align: left;
+  margin: 2em;
 }
 
-.clients {
+.service-features h6, .service-features .h6 {
+  color: #047857;
+  font-weight: bold;
+}
+
+.service-features p {
+  margin-top: 0.5em;
+  color: #4b5563;
+}
+
+.service-features span svg {
+  color: #047857;
+  width: 18px;
+  height: 18px;
+}
+
+.clients-services {
   width: 100%;
   min-height: 350px;
-  background-color: #d2ffea;
+  background: linear-gradient(rgba(209, 252, 232, 0.337254902), rgba(209, 252, 232, 0.1764705882));
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2em;
-  gap: 30px;
+  margin-top: 5em;
 }
 
-.clients h1, .clients .h1 {
+.clients-services h1, .clients-services .h1 {
+  margin-top: 2em;
+  margin-bottom: 0.5em;
   color: #111827;
   font-weight: bolder;
 }
 
-.clients p {
+.clients-services p {
   color: #4b5563;
   font-size: 1.2em;
-}
-
-.floating-cards {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
 }
 
 .floating-cards-details {
   background-color: #ffffff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  width: 50%;
+  width: 400px;
   min-height: 200px;
   border-radius: 10px;
   padding: 1.6em;
   text-align: left;
+  margin-top: 3em;
+  margin-bottom: 5em;
+  margin-right: 1em;
   transition: all 0.4s ease-in-out;
 }
 
@@ -24417,27 +24429,33 @@ footer {
   font-weight: 600;
 }
 
-.clients-names {
+.floating-cards-details .clients-names {
   display: flex;
   gap: 20px;
   align-items: center;
+  margin-top: 2em;
 }
 
-.clients-names p {
+.floating-cards-details .clients-names p {
   font-size: 0.9em;
   color: #047857;
 }
 
-.initial-letters {
+.floating-cards-details .initial-letters {
   background-color: rgba(110, 231, 183, 0.2588235294);
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   color: #064e3b;
-  padding: 10px;
+  padding: 10px 16px;
   border-radius: 40px;
 }
 
-.style-name p {
-  color: #4b5563;
+.floating-cards-details .clients-names .style-name {
+  margin: 0;
+  padding: 0;
+}
+
+.floating-cards-details .clients-names .style-name p {
+  color: #8b919b;
 }
 
 .main-info {
