@@ -1,38 +1,35 @@
 .env-form {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     flex-direction: column;
     width: 100%;
+    margin: 0 auto;
 }
 
-form {
-  width: 60%;
-}
-
-.loading-container {
+.primary-contatc {
+width: 100%;
 display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
-width: 70%;
-margin: 0 auto;
+align-items: center; 
+gap: 10px;
+min-height: 200px;
+background-color: #064e3b;
+text-align: center;
 }
-
-.loading-container .error-message {
-    color: #c92121d2;
-    }
-    .loading-container .success-message {
-      color: #fff;
-      }
-
-.error-message, .success-message {
-    width: 20%;
-    height: auto;
-    text-align: center;
-    margin: 0 auto;
-    border-radius: 5%;
-    font-weight: bold;
-    background-color: #000;
-    box-shadow: 1px 1px 1px 3px #59a87d2a;
+.primary-contatc h1{
+font-weight: bolder;
+font-size: 3em;
+color: #ffffff;
+}
+.primary-contatc p{
+  color: #d1fae7;
+  font-size: 1.2em;
   }
+
+.title-board {
+    color: #111827;
+    font-weight: bold;
+    font-size: 1.2em;
+}
