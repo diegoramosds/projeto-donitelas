@@ -12,12 +12,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer/Footer"
 import Information from "./pages/Information/Information"
 import ScrollToTop from "./components/ScrollTop/ScrollTop"
+import Contact from "./pages/Contact/Contact"
 
 function App() {
 
   return (
     <>
-  
         <BrowserRouter>
         <ScrollToTop />
         <NavBar />
@@ -26,6 +26,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/work" element={<Work />} />
             <Route path="/information" element={<Information />} />
+            <Route path="/contact" element={<Contact />} />
               {/* <Route index element={<Home />} /> */}
               {/* <Route path="*" element={<NoPage />} /> */}
           </Routes>
