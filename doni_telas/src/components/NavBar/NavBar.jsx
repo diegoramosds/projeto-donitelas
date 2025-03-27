@@ -54,11 +54,11 @@ const NavBar = () => {
               <a href="https://wa.me/5511968579924?text=Olá,%20gostaria%20de%20solitar%20um%20orçamento" target="_blank">Whatsapp</a>
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
-                <a href="mailto:telasdoni@gmail.com" target="_blank">E-mail</a>
+                <a href="tel:+5511968579924" target="_blank">Ligar Agora</a>
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">
-                <a href="tel:+5511968579924">Tel: (11)96857-9924</a>
+              <NavDropdown.Item href="#action/3.4" as={Link} to="/contact" onClick={closeMenu}>
+                Formulário de contato
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
