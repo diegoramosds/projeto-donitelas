@@ -1,0 +1,37 @@
+.main-nav {
+position: fixed;
+width: 100%;
+z-index: 10;
+}
+.nav-button {
+display: flex;
+align-items: center;
+justify-content: space-around;
+width: 11%;
+color: #064e3b;
+border: 0;
+}
+.custom-navbar {
+background-color: #111827;
+opacity: 0.98;
+box-shadow: rgba(0, 0, 0, 0.103) 0px 25px 20px -20px;
+}
+.nav-button:hover {
+background-color: #d7fcead3;
+}
+.navbar .nav-link {
+margin-right: 1.3em;
+color: #ffffff;
+font-weight: 600;
+}
+.navbar .nav-link:hover{
+color: #6ee7b7;
+}
+.navbar .dropdown-item {
+color: #111827;
+}
+
+.navbar .navbar-brand {
+    color: #ffffff;
+    font-size: 1.3em;
+}

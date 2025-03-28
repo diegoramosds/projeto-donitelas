@@ -9,6 +9,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useEffect, useRef, useState } from "react";
 
 import { motion } from "motion/react"
+import { Phone } from "lucide-react";
 
 const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -35,13 +36,14 @@ const NavBar = () => {
     };
   }, []);
   return (
-    <div>
-      <Navbar ref={navbarRef} expanded={expanded} expand="lg" className="bg-body-tertiary" bg="dark" data-bs-theme="dark">
+    <>
+    <div className="main-nav">
+      <Navbar ref={navbarRef} expanded={expanded} expand="lg" className="custom-navbar">
       <Container>
         <Navbar.Brand as={Link} to="/"><strong>DONI<span className="important-words">TELAS</span></strong></Navbar.Brand>
         <Navbar.Toggle onClick={toggleMenu} aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
+          <Nav className="mx-auto my-2">
             <motion.nav
             animate={{ opacity: 1, y: "-20" }}>
             </motion.nav>
@@ -63,9 +65,11 @@ const NavBar = () => {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
+        <button type="button" className="btn btn-light py-1 px-3 nav-button"><Phone size={15}/><span>Orçamento</span></button>
       </Container>
     </Navbar>
     </div>
+    </>
   )
 }
 

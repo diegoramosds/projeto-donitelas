@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white mt-5">
+    <footer className="text-white mt-5">
       <Container>
         <Row>
           <Col md={4}>
@@ -15,20 +15,20 @@ const Footer = () => {
           <Col md={4}>
             <h5>Páginas</h5>
             <ul className="list-unstyled">
-              <li><Link to="/" className="text-white">Home</Link></li>
-              <li><Link to="/about" className="text-white">Sobre</Link></li>
-              <li><Link to="/work" className="text-white">Serviços</Link></li>      
+              <li><Link to="/" >Home</Link></li>
+              <li><Link to="/about" >Sobre</Link></li>
+              <li><Link to="/work" >Serviços</Link></li>
             </ul>
           </Col>
           <Col md={4}>
             <h5>Contato</h5>
-            <p><a href="mailto:telasdoni@gmail.com" target='_blank'>Email: telasdoni@gmail.com</a></p>
-            <p><a href="tel:+5511968579924" target='_blank'>Telefone: (11)96857-9924</a></p>
+            <p>Email:<a href="mailto:telasdoni@gmail.com" target='_blank'> telasdoni@gmail.com</a></p>
+            <p>Telefone:<a href="tel:+5511968579924" target='_blank'> (11)96857-9924</a></p>
           </Col>
         </Row>
         <Row className="mt-3">
           <Col className="text-center">
-            <small>&copy; 2024 DIEGO <span className='important-words'>RAMOS</span>. Todos os direitos reservados.</small>
+            <small>&copy; 2025 DIEGO <span className='important-words'>RAMOS</span>. Todos os direitos reservados.</small>
           </Col>
         </Row>
       </Container>

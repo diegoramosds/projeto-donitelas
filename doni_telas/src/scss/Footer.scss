@@ -3,9 +3,17 @@ footer {
     justify-content: center;
     align-items: center;
     min-height: 200px;
-    background-color: #333;
+    background-color: #111827;
     box-shadow: 0 -4px 6px -3px #000000e7;
-    color: #fff;
+    color: #ffffff;
     width: 100%;
     margin-top: 250px;
+    opacity: 0.98;
 }
+footer a {
+color: #ffffff;
+}
+footer a:hover   {
+    color: #6ee7b7;
+}
+
