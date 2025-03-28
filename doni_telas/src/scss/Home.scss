@@ -26,10 +26,15 @@
     font-size: 4em;
     font-weight: bolder;
     margin-bottom: .5em;
+    margin-top: 1em;
 }
 .primary p{
     font-size: 1.2em;
     font-weight: 500;
+}
+.main-home a{
+   color: #ffffff;
+   text-decoration: none;
 }
 .introduction-home {
     width: 55%;
@@ -70,6 +75,9 @@ list-style: none;
 }
 .my-services-button:hover{
     background-color: #6ee7b738;
+    color: #1f2937;
+}
+.my-services-button:hover .my-services-button a{
     color: #1f2937;
 }
 
@@ -138,99 +146,7 @@ margin-top: 3em;
     font-size: 1.2em;
 }
 
-.service-details {
-    display: flex;
-    max-width: 100%;
-    justify-content: center;
-    align-items: start;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin: 0 auto;
-}
-.service-cards {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
-    position: relative;
-    width: 430px;
-    gap: 10px;
-    min-height: 520px;
-    max-height: 1000px;
-    box-shadow: #63636333 0px 2px 8px 0px;
-    background-color: #ffffff;
-    border-radius: 20px;
-    margin-top: 3em;
-    word-wrap: break-word;
-    transition: max-height 6s ease-in-out;
-}
-.service-cards:hover .learn-more button {
-    background-color: #cdfce58c;
-}
-.service-images {
-width: 100%;
-height: 80%;
-transition: scale 0.4s ease-in-out;
-}
-.service-images img{
-width: 100%;
-height: 270px;
-border-radius: 20px 20px 0px 0px;
-transition: scale 0.4s ease-in-out;
-}
 
-.text-details {
-text-align: left;
-margin: 15px;
-}
-.text-details h1{
-font-size: 2em;
-}
-.text-details p {
-font-size: 1em;
-padding-left: 7px;
-}
-.learn-more  {
-width: 100%;
-}
-
-.learn-more button {
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
-    color: #064e3b;
-    font-weight: 600;
-    border: 1px solid #064e3b;
-    background-color: transparent;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    text-align: left;
-    border-radius: 5px;
-    padding: 6px;
-    width: 90%;
-    margin-bottom: 2em;
-    transition: all 0.3s ease-in-out;
-}
-.learn-more button:hover{
-    color: #1f2937;
- }
-.learn-more button span{
-   margin: 2px 10px;
-}
-.learn-more button svg{
-    width: 18px;
-    height: 18px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.service-cards:hover .learn-more button svg  {
-    transform: translateX(5px);
-}
-.service-cards:hover .service-images img  {
-    scale: 1.02;
-    overflow: hidden;
-    position: relative;
-}
 .see-all-services {
 width: 100%;
 margin: 0 auto;
@@ -262,7 +178,7 @@ margin-top: 4em;
 }
 
 .see-all-services button:hover {
-    background-color: #053b2d;
+    background-color: #054633fd;
 }
 .contact {
     display: flex;
@@ -298,6 +214,10 @@ font-size: 2em;
 width: 50%;
 margin: 0 auto;
 }
+.redirect-zap a{
+color: #064e3b; 
+}
+
 .redirect-zap button{
         display: flex;
         margin: 0 auto;
@@ -310,7 +230,7 @@ margin: 0 auto;
         border: 0;
         text-align: left;
         border-radius: 5px;
-        padding: 12px 12px;
+        padding: 12px 10px;
         width: 20%;
         transition: all 0.3s ease-in-out;
     }
@@ -320,14 +240,14 @@ margin: 0 auto;
     }
 
     .redirect-zap button svg {
-        width: 16px;
-        height: 16px;
+        width: 18px;
+        height: 18px;
         transition: width 0.3s ease-in-out;
     }
 
     .redirect-zap button:hover svg {
-        width: 14px;
-        height: auto;
+        width: 17px;
+        height: 17px;
 }
 
 
