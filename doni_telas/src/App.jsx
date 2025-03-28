@@ -7,6 +7,7 @@ import About from './pages/About/About'
 import NavBar from './components/NavBar/NavBar'
 import Work from './pages/Work/Work'
 
+
 // index.js ou App.js
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer/Footer"
