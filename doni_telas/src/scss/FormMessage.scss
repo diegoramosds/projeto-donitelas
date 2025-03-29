@@ -68,3 +68,9 @@ background-color: #046d4f;
     box-shadow: #63636333 0px 2px 8px 0px;
     color: #1f2937;
   }
+
+@media screen and (max-width: 767px) {
+  .form-message{
+    width: 95%;
+  }
+}

@@ -29,7 +29,7 @@ const Contact = () => {
             <p>
               <span><Phone size={30}/></span>
               <span className='title-board'>Telefone</span>
-              <span>(11) 99999-9999</span>
+              <span>(11) 96857-9924</span>
             </p>
         </motion.div>
 
@@ -42,7 +42,7 @@ const Contact = () => {
             <p>
               <span><Mail size={30}/></span>
               <span className='title-board'>Email</span>
-              <span>contato@donitelas.com.br</span>
+              <span>telasdoni@gmail.com</span>
             </p>
         </motion.div>
 
