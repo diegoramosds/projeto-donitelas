@@ -33,8 +33,8 @@
     font-weight: 500;
 }
 .main-home a{
-   color: #ffffff;
-   text-decoration: none;
+color: #ffffff;
+text-decoration: none;
 }
 .introduction-home {
     width: 55%;
@@ -83,6 +83,8 @@ list-style: none;
 
 .info-profile {
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 50px;
     width: 90%;
     margin: 0 auto;
@@ -130,6 +132,41 @@ list-style: none;
     padding: 10px;
 }
 
+
+.feedbacks-home {
+width: 100%;
+margin: 0 auto;
+}
+.feedbacks-home a {
+width: 100%;
+}
+.feedbacks-home button{
+    display: flex;
+    min-width: 15%;
+    margin: 3px auto;
+    justify-content: space-around;
+    align-items: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: .9em;
+    border: 1px solid #064e3b;
+    background-color: #064e3b;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    text-align: left;
+    gap: 20px;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 2em;
+    transition: all 0.3s ease-in-out;
+}
+.feedbacks-home button:hover {
+background-color: #054633fd;
+}
+.feedbacks-home button svg {
+    width: 18px;
+    height: 18px;
+}
+
 .important-works {
 color: #111827;
 margin-top: 3em;
@@ -151,6 +188,10 @@ margin-top: 3em;
 width: 100%;
 margin: 0 auto;
 margin-top: 4em;
+}
+
+.see-all-services a {
+width: 100%;
 }
 
 .see-all-services button{
@@ -215,6 +256,7 @@ width: 50%;
 margin: 0 auto;
 }
 .redirect-zap a{
+width: 100%;
 color: #064e3b; 
 }
 
@@ -253,6 +295,64 @@ color: #064e3b;
 
 
 @media screen and (max-width: 767px) {
+    .primary {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+        height: 430px;
+        background: linear-gradient(to left, #064e3b, #064e3b);
+        color: #ffffff;
+        padding: 20px;
+    }
+    .primary h1{
+        font-size: 2.7em;
+    }
+    .primary p{
+        font-size: 1.1em;
+    }
+
+    .introduction-home {
+        width: 95%;
+    }
+
+    .options button{
+        width: 50%;
+        height: 18%;
+    }
+
+    .info-profile {
+        flex-direction: column;
+    }
+
+    .board-details{
+        width: 95%;
+    }
+
+    .important-works {
+        color: #111827;
+        margin-top: 3em;
+        }
+
+        .important-works h1 {
+            font-size: 2em;
+        }
+        .important-works p {
+            font-size: 1.1em;
+        }
+
+        .redirect-zap h1{
+            font-size: 1.5em;
+            }
+            .redirect-zap p{
+            width: 90%;
+            margin: 0 auto;
+            }
+            .redirect-zap button{
+                    width: 80%;
+                }
 
 }
 

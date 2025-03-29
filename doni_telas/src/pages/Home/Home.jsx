@@ -8,6 +8,10 @@ import ServiceCards from '../../components/ServiceCards/ServiceCards';
 import { featuredServices } from "../../data/ItemFeaturedServices"
 
 const Home = () => {
+
+const showFeedback = () => {
+
+}
   return (
     <div className='main-home'>
       <div className='primary'>
@@ -36,8 +40,8 @@ const Home = () => {
         </div>
 
         <div className='options'>
-          <button className='request-quote-button'><Link to='/contact'>Solicitar orçamento</Link> </button>
-          <button className='my-services-button'><Link to='/work'>Meus serviços</Link></button>
+          <button className='request-quote-button'><Link to='/contact'>Orçamento</Link> </button>
+          <button className='my-services-button'><Link to='/work'>Serviços</Link></button>
         </div>
 
         </motion.div>
@@ -84,6 +88,12 @@ const Home = () => {
         </motion.div>
       </div>
 
+      <div className='feedbacks-home'>
+        <Link to='/work'>
+          <button onClick={showFeedback}> <span>Opiniões de Clientes</span> <span><ArrowRight /> </span> </button>
+        </Link>
+      </div>
+
       <div className='important-works'>
         <h1>Tipos de Serviços</h1>
         <p>Soluções de proteção completas para sua residência ou negócio.</p>
@@ -99,10 +109,13 @@ const Home = () => {
       </div>
     </div>
         <div className='see-all-services'>
-              <button>
-              <Link to='/work'><span>Ver todos os serviços</span></Link>
-                <span><ArrowRight /></span>
-                </button>
+        <Link to='/work'> 
+        <button>
+          <span>Ver todos os serviços</span>
+          <span><ArrowRight /></span>
+          </button>
+        </Link>
+
             </div>
       </div>
       <div className='contact'>
@@ -115,7 +128,9 @@ const Home = () => {
           >
                   <h1>Solicite um Orçamento Grátis</h1>
                   <p>Entre em contato por WhatsApp para solicitar um orçamento sem compromisso ou agende uma visita técnica.</p>
-                  <button> <span><Phone /> </span> <span><a href="https://wa.me/5511968579924?text=Olá,%20gostaria%20de%20solitar%20um%20orçamento" target="_blank">Chamar no WhataApp</a></span></button>
+                  <a href="https://wa.me/5511968579924?text=Olá,%20gostaria%20de%20solitar%20um%20orçamento" target="_blank">
+                  <button> <span><Phone /> </span> <span>Chamar no WhataApp</span></button>
+                  </a>
           </motion.div>
 
       </div>
