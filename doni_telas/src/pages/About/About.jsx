@@ -51,7 +51,7 @@ const About = () => {
                   <div><span><Shield/> </span></div>
                   <div className='text-compromise'>
                     <h6>Compromisso com Qualidade</h6>
-                    <p>Utilizando apenas materiais de primeira linha</p>
+                    <p>Utilizando apenas materiais de qualidade</p>
                   </div>
                 </div>
         </motion.div>

@@ -8,7 +8,7 @@
 
 .primary-about {
   width: 100%;
-  min-height: 190px;
+  min-height: 210px;
   background-color: #064e3b;
   text-align: center;
   display: flex;
@@ -16,6 +16,7 @@
   align-items: center;
   color: #ffffff;
   padding-bottom: 1.3em;
+  padding-top: 1.3em;
 }
 .primary-about h1 {
   font-weight: bolder;
@@ -33,6 +34,7 @@
   width: 100%;
   margin: 0 auto;
   margin-top: 5em;
+  margin-left: 1.7em;
   margin-bottom: 3em;
 
 }
@@ -57,10 +59,9 @@
   }
   .text-about p {
     color: #4b5563;
-    font-size: 1em;
+    font-size: 1.1em;
     width: 95%;
-
-  }
+}
 
 .photo-about {
   width: 100%;
@@ -79,7 +80,7 @@
   z-index: -1;
 }
 .photo-about img {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   border-radius: 20px;
   box-shadow: #63636333 0px 2px 8px 0px;
@@ -112,6 +113,8 @@ border-radius: 40px;
 }
 .text-compromise h6 {
 font-weight: bolder;
+margin: 0;
+
 }
 .text-compromise p {
 margin: 0;
@@ -131,6 +134,7 @@ color: #4b5563;
   align-items: center;
   flex-direction: column;
   gap: 30px;
+  padding: 5px;
 }
 
 .text-value h1{
@@ -144,7 +148,8 @@ font-size: 1.2em;
 
 .board-about  {
   display: flex;
-  width: 90%;
+  word-break: break-all;
+  width: 100%;
   gap: 30px;
 }
 .board-details-about{
@@ -152,7 +157,7 @@ font-size: 1.2em;
   justify-content: left;
   color: #4b5563;
   font-weight: 600;
-  width: 70%;
+  width: 60%;
   min-height: 200px;
   background-color: #ffffff;
   box-shadow: #63636333 0px 2px 8px 0px;
@@ -195,7 +200,75 @@ width: 90%;
 
 
 @media screen and (max-width: 767px) {
+  .primary-about h1 {
+    font-size: 2.5em;
+  }
+  .primary-about p {
+    color: #d1fce8;
+    font-size: 1.1em;
+  }
 
+  .info-about {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .text-about {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .text-about h1 {
+    color: #111827;
+    font-size: 2em;
+    }
+    .text-about p {
+      width: 99%;
+  }
+
+
+    .icon-compromise {
+      width: 95%;
+      margin-top: 2em;
+      margin-bottom: 3em;
+    }
+
+
+    .photo-about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .photo-about::before {
+      left: 5px;
+    }
+    .photo-about img {
+      width: 85%;
+      margin: 0 auto;
+    }
+
+    .text-value p {
+      font-size: 1.1em;
+      }
+
+      .board-about  {
+        align-items: center;
+        flex-direction: column;
+  }
+
+      .board-details-about{
+        width: 95%;
+      }
+
+      .text-board h4{
+        font-size: 1.3em;
+        }
+        .text-board p{
+        width: 95%;
+        }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1267px) {

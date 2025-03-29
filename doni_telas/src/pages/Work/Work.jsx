@@ -1,6 +1,7 @@
 // service images
 import Marquee from "react-fast-marquee";
 
+import { motion } from "motion/react"
 
 import ServiceCards from "../../components/ServiceCards/ServiceCards";
 
@@ -15,8 +16,15 @@ const Work = () => {
   return (
     <div className="main-work">
       <div className="primary-work">
-        <h1>Projetos realizados</h1>
-        <p>Conheça alguns dos meus projetos realizados com excelência e qualidade.</p>
+      <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}>
+      <h1>Projetos realizados</h1>
+      <p>Conheça alguns dos meus projetos realizados com excelência e qualidade.</p>
+        
+      </motion.div>
+        
       </div>
 
       <ServiceCards

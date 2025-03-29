@@ -99,6 +99,24 @@ color: #8b919b;
 
 
 @media screen and (max-width: 767px) {
+    .primary-work h1 {
+        font-size: 2.5em;
+    }
+    .primary-work p {
+        color: #d1fce8;
+        font-size: 1.1em;
+    }
+
+    .clients-services p{
+    font-size: 1.1em;
+    }
+
+    .floating-cards-details {
+        width: 350px;
+        min-height: 200px;
+        border-radius: 10px;
+        padding: 1.2em;
+        }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1267px) {
