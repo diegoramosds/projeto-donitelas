@@ -13,7 +13,7 @@
     flex-direction: column;
     overflow: hidden;
     position: relative;
-    width: 430px;
+    width: 30%;
     gap: 20px;
     min-height: 530px;
     max-height: 1000px;
@@ -112,3 +112,11 @@ transition: scale 0.4s ease-in-out;
         width: 18px;
         height: 18px;
         }
+
+
+@media screen and (max-width: 767px) {
+    .service-cards {
+        width: 95%;
+    }
+
+}

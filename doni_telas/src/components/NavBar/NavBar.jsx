@@ -9,7 +9,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { useEffect, useRef, useState } from "react";
 
 import { motion } from "motion/react"
-import { Phone } from "lucide-react";
+import { Menu, Phone } from "lucide-react";
 
 const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -23,7 +23,6 @@ const NavBar = () => {
  
   useEffect(() => {
     function handleClickOutside(event) {
-      
       if (navbarRef.current && !navbarRef.current.contains(event.target)) {
         closeMenu();
       }
@@ -38,19 +37,26 @@ const NavBar = () => {
   return (
     <>
     <div className="main-nav">
-      <Navbar ref={navbarRef} expanded={expanded} expand="lg" className="custom-navbar">
+      <Navbar ref={navbarRef} expanded={expanded} expand="lg">
       <Container>
-        <Navbar.Brand as={Link} to="/"><strong>DONI<span className="important-words">TELAS</span></strong></Navbar.Brand>
-        <Navbar.Toggle onClick={toggleMenu} aria-controls="basic-navbar-nav" />
+        <div className="options-nav">
+          <Navbar.Brand as={Link} to="/"><strong>DONI<span className="important-words">TELAS</span></strong></Navbar.Brand>
+          <Navbar.Toggle onClick={toggleMenu} aria-controls="basic-navbar-nav">
+            <Menu size={28} color="#ffffff"/>
+          </Navbar.Toggle>
+        </div>
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto my-2">
-            <motion.nav
-            animate={{ opacity: 1, y: "-20" }}>
-            </motion.nav>
+          <Nav className="mx-auto my-2 ">
+            {/* <motion.nav
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="options-nav"> */}
             <Nav.Link as={Link} to="/" onClick={closeMenu}>Home</Nav.Link>
             <Nav.Link as={Link} to="/about" onClick={closeMenu}>Sobre</Nav.Link>
             <Nav.Link as={Link} to="/work" onClick={closeMenu}>Serviços</Nav.Link>
-            <Nav.Link as={Link} to="/information" onClick={closeMenu}>Mais informações</Nav.Link>
+            <Nav.Link as={Link} to="/information" onClick={closeMenu}>Mais informações</Nav.Link> 
+            {/* </Nav></motion.nav> */}
             <NavDropdown title="Contato" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">
               <a href="https://wa.me/5511968579924?text=Olá,%20gostaria%20de%20solitar%20um%20orçamento" target="_blank">Whatsapp</a>
@@ -65,7 +71,9 @@ const NavBar = () => {
             </NavDropdown>
           </Nav>
         </Navbar.Collapse>
-        <button type="button" className="btn btn-light py-1 px-3 nav-button"><Phone size={15}/><span>Orçamento</span></button>
+        <Link to='/contact' className="nav-button">
+        <Phone size={15}/>Orçamento
+        </Link>
       </Container>
     </Navbar>
     </div>
