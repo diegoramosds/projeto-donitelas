@@ -1,16 +1,23 @@
+import { motion } from "motion/react"
 
 const Information = () => {
   return (
     <div className='main-info'>
       <div className='primary-info'>
-        <h1>Mais informações</h1>
-        <p>Recursos adicionais e informações úteis sobre nossos produtos e serviços</p>
+      <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}>
+
+      <h1>Mais informações</h1>
+      <p>Recursos adicionais e informações úteis sobre nossos produtos e serviços</p>
+      </motion.div>
       </div>
 
       <div className='questions-info'>
         <div className="text-question">
           <h1>Perguntas Frequentes</h1>
-          <p>Encontre respostas para as dúvidas mais comuns sobre nossos produtos e serviços.</p>
+          <p>Encontre respostas para as dúvidas mais comuns sobre meus serviços.</p>
         </div>
         <div className="ansewrs-question">
 
@@ -27,23 +34,23 @@ const Information = () => {
             <p>Os valores variam de acordo com o tipo de serviço e as
           necessidades  específicas de cada cliente.
           Cada projeto é único, e por isso, é importante solicitar um  orçamento
-          personalizado. Dessa forma, conseguimos
+          personalizado. Dessa forma, consigo
           avaliar todas as exigências e oferecer um preço justo e competitivo que atenda ao seu orçamento.</p>
           </div>
 
           <div className="ansewrs">
             <h4>Quais locais você trabalha?</h4>
             <p>Atendo em diversas localidades na  região de São Paulo ,
-            incluindo cidades próximas como Sorocaba, Cotia, Mairinque, entre várias outras.
+            incluindo cidades próximas como Sorocaba, Cotia, Mairinque, São Roque, Jundiaí entre várias outras.
             Se sua cidade não está na lista,  entre em contato  para verificar a
-            possibilidade de atendimento e esclarecer dúvidas sobre nossa cobertura.</p>
+            possibilidade de atendimento e esclarecer dúvidas.</p>
           </div>
 
           <div className="ansewrs">
             <h4>Como funciona a parte do pagamento?</h4>
             <p>Normalmente, o pagamento é dividido em duas etapas: uma parte é recebida no início do projeto
           para cobrir materiais e preparação, e o restante é pago
-          ao final, após a  conclusão do serviç.
+          ao final, após a  conclusão do serviço.
           Essa divisão garante transparência e segurança para ambas as partes.</p>
           </div>
 
@@ -51,7 +58,7 @@ const Information = () => {
             <h4>Quanto tempo é levado para finalizar os serviços?</h4>
             <p>O tempo necessário para concluir o serviço depende da complexidade
           e das especificidades
-          de cada projeto, além da localidade. Em geral, oferecemos uma estimativa durante o orçamento 
+          de cada projeto, além da localidade. Em geral, ofereço uma estimativa durante o orçamento 
           inicial para que você saiba o que esperar e possa se planejar melhor.</p>
           </div>
 
@@ -59,8 +66,8 @@ const Information = () => {
             <h4>Porque escolher você?</h4>
             <p>Com  anos de experiência no mercado, ofereço serviços com alta qualidade e
               um  padrão de excelência, sempre focado em atender às necessidades de segurança
-              e estética dos nossos clientes. Meu compromisso é entregar resultados confiáveis e duradouros,
-              garantindo a satisfação de quem confia em nosso trabalho.</p>
+              e estética dos clientes. Meu compromisso é entregar resultados confiáveis e duradouros,
+              garantindo a satisfação de quem confia em meu trabalho.</p>
           </div>
         </div>
       </div>

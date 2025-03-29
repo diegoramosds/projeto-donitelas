@@ -19,6 +19,7 @@ font-size: 1em;
     justify-content: center;
     align-items: center;
     color: #ffffff;
+    padding-top: 2em;
 }
 .primary-info h1{
     color: #ffffff;
@@ -62,4 +63,15 @@ border-bottom: 1px solid #9ca3af80 ;
 .ansewrs h4 {
 color: #111827;
 font-weight: bolder;
+}
+
+@media screen and (max-width: 767px) {
+    .ansewrs-question {
+        padding: 5px;
+        gap: 30px;
+        width: 95%;
+        }
+        .ansewrs p {
+            font-size: 1.1em;
+      }
 }
