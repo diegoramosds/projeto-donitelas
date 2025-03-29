@@ -1,0 +1,18 @@
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+          <!-- Shield shape -->
+          <path d="M15 20 L40 10 L65 20 L65 50 C65 60 55 65 40 75 C25 65 15 60 15 50 Z" 
+                fill="#10b981" 
+                stroke="#6ee7b7" 
+                stroke-width="1.5" />
+          <!-- Grid pattern -->
+          <g stroke="white" stroke-width="2.5">
+            <line x1="25" y1="25" x2="55" y2="25" />
+            <line x1="25" y1="40" x2="55" y2="40" />
+            <line x1="25" y1="55" x2="55" y2="55" />
+            <line x1="25" y1="25" x2="25" y2="55" />
+            <line x1="40" y1="25" x2="40" y2="55" />
+            <line x1="55" y1="25" x2="55" y2="55" />
+          </g>
+        </svg>
+      
