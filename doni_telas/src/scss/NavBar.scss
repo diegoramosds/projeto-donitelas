@@ -10,7 +10,8 @@ background-color: #111827;
 display: flex;
 align-items: center;
 justify-content: space-around;
-width: 10%;
+gap: 20px;
+min-width: 10%;
 padding: 4px 8px;
 color: #064e3b;
 background-color: #ffffff;
@@ -34,13 +35,16 @@ color: #111827;
 #basic-nav-dropdown {
     color: #ffffff;
 }
+#basic-nav-dropdown :hove {
+    color: #6ee7b7;
+}
 .navbar .navbar-brand {
     color: #ffffff;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
 .nav-button {
 visibility: hidden;
 }
@@ -53,7 +57,7 @@ height: 0;
 padding-top: 2em;
 }
 
-.navbar-toggler {
+.navbar-toggler, .navbar-toggler svg {
     border: 0;
     box-shadow: none;
 }
@@ -61,14 +65,8 @@ padding-top: 2em;
     border: 0;
     box-shadow: none;
 }
-.navbar-toggler-icon {
-filter: invert(1);
-}
-.navbar-toggler-icon:hover {
-    filter: invert(1);
-}
-
 #basic-navbar-nav {
+    font-size: 1.2em;
     margin-top: 2em;
 }
 }

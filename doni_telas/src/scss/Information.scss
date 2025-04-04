@@ -65,13 +65,13 @@ color: #111827;
 font-weight: bolder;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
     .ansewrs-question {
         padding: 5px;
         gap: 30px;
         width: 95%;
         }
         .ansewrs p {
-            font-size: 1.1em;
+            font-size: 1.2em;
       }
 }

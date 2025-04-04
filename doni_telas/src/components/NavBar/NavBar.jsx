@@ -42,7 +42,7 @@ const NavBar = () => {
         <div className="options-nav">
           <Navbar.Brand as={Link} to="/"><strong>DONI<span className="important-words">TELAS</span></strong></Navbar.Brand>
           <Navbar.Toggle onClick={toggleMenu} aria-controls="basic-navbar-nav">
-            <Menu size={28} color="#ffffff"/>
+            <Menu size={30} color="#ffffff"/>
           </Navbar.Toggle>
         </div>
         <Navbar.Collapse id="basic-navbar-nav">
@@ -65,8 +65,8 @@ const NavBar = () => {
                 <a href="tel:+5511968579924" target="_blank">Ligar Agora</a>
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4" as={Link} to="/contact" onClick={closeMenu}>
-                Formulário de contato
+              <NavDropdown.Item href="#action/3.4" onClick={closeMenu}>
+                <Link to="/contact">Formulário de contato</Link>
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>

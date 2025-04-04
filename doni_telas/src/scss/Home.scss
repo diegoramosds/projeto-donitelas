@@ -45,14 +45,16 @@ text-decoration: none;
 display: flex;
 align-items: center;
 justify-content: center;
+flex-wrap: wrap;
 gap: 20px;
 list-style: none;
+width: 100%;
 }
 
 .options button{
-    width: 16%;
+    min-width: 300px;
     height: 45px;
-    padding: 10px 8px;
+    padding: 10px 20px;
     color: #ffffff;
     border-radius: 7px;
     font-size: 1.1em;
@@ -263,7 +265,8 @@ color: #064e3b;
 .redirect-zap button{
         display: flex;
         margin: 0 auto;
-        justify-content: space-around;
+        justify-content: center;
+        gap: 30px;
         align-items: center;
         color: #064e3b;
         background-color: #ffffff;
@@ -273,7 +276,7 @@ color: #064e3b;
         text-align: left;
         border-radius: 5px;
         padding: 12px 10px;
-        width: 20%;
+        min-width: 10%;
         transition: all 0.3s ease-in-out;
     }
 
@@ -294,7 +297,8 @@ color: #064e3b;
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 960px) {
+
     .primary {
         width: 100%;
         display: flex;
@@ -311,7 +315,7 @@ color: #064e3b;
         font-size: 2.7em;
     }
     .primary p{
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
     .introduction-home {
@@ -319,7 +323,8 @@ color: #064e3b;
     }
 
     .options button{
-        width: 50%;
+        min-width: 120px;
+        max-width: 200px;
         height: 18%;
     }
 
@@ -340,7 +345,7 @@ color: #064e3b;
             font-size: 2em;
         }
         .important-works p {
-            font-size: 1.1em;
+            font-size: 1.2em;
         }
 
         .redirect-zap h1{
@@ -350,10 +355,6 @@ color: #064e3b;
             width: 90%;
             margin: 0 auto;
             }
-            .redirect-zap button{
-                    width: 80%;
-                }
-
 }
 
   @media screen and (min-width: 768px) and (max-width: 1267px) {

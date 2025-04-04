@@ -23739,14 +23739,16 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
   list-style: none;
+  width: 100%;
 }
 
 .options button {
-  width: 16%;
+  min-width: 300px;
   height: 45px;
-  padding: 10px 8px;
+  padding: 10px 20px;
   color: #ffffff;
   border-radius: 7px;
   font-size: 1.1em;
@@ -23838,7 +23840,7 @@ textarea.form-control-lg {
 }
 
 .feedbacks-home a {
-  width: 100;
+  width: 100%;
 }
 
 .feedbacks-home button {
@@ -23971,7 +23973,8 @@ textarea.form-control-lg {
 .redirect-zap button {
   display: flex;
   margin: 0 auto;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 30px;
   align-items: center;
   color: #064e3b;
   background-color: #ffffff;
@@ -23981,7 +23984,7 @@ textarea.form-control-lg {
   text-align: left;
   border-radius: 5px;
   padding: 12px 10px;
-  width: 20%;
+  min-width: 10%;
   transition: all 0.3s ease-in-out;
 }
 
@@ -24000,7 +24003,7 @@ textarea.form-control-lg {
   height: 17px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 960px) {
   .primary {
     width: 100%;
     display: flex;
@@ -24017,13 +24020,14 @@ textarea.form-control-lg {
     font-size: 2.7em;
   }
   .primary p {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
   .introduction-home {
     width: 95%;
   }
   .options button {
-    width: 50%;
+    min-width: 120px;
+    max-width: 200px;
     height: 18%;
   }
   .info-profile {
@@ -24040,7 +24044,7 @@ textarea.form-control-lg {
     font-size: 2em;
   }
   .important-works p {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
   .redirect-zap h1, .redirect-zap .h1 {
     font-size: 1.5em;
@@ -24048,9 +24052,6 @@ textarea.form-control-lg {
   .redirect-zap p {
     width: 90%;
     margin: 0 auto;
-  }
-  .redirect-zap button {
-    width: 80%;
   }
 }
 footer {
@@ -24287,7 +24288,7 @@ footer a:hover {
   width: 90%;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .primary-about h1, .primary-about .h1 {
     font-size: 2.5em;
   }
@@ -24332,7 +24333,7 @@ footer a:hover {
     margin: 0 auto;
   }
   .text-value p {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
   .board-about {
     align-items: center;
@@ -24348,6 +24349,50 @@ footer a:hover {
     width: 95%;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1000px) {
+  .info-about {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .text-about {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .text-about p {
+    width: 99%;
+  }
+  .icon-compromise {
+    width: 95%;
+    margin-top: 2em;
+    margin-bottom: 3em;
+  }
+  .photo-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .photo-about::before {
+    left: 40px;
+  }
+  .photo-about img {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .board-about {
+    align-items: center;
+    flex-direction: column;
+  }
+  .board-details-about {
+    width: 80%;
+  }
+  .text-board p {
+    width: 85%;
+  }
+}
 .main-work {
   width: 100%;
   display: flex;
@@ -24360,7 +24405,7 @@ footer a:hover {
 
 .primary-work {
   width: 100%;
-  min-height: 210px;
+  min-height: 230px;
   background-color: #064e3b;
   text-align: center;
   display: flex;
@@ -24369,6 +24414,7 @@ footer a:hover {
   align-items: center;
   color: #ffffff;
   padding-bottom: 1.3em;
+  padding-top: 1.3em;
 }
 
 .primary-work h1, .primary-work .h1 {
@@ -24548,14 +24594,14 @@ footer a:hover {
   font-weight: bolder;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1000px) {
   .ansewrs-question {
     padding: 5px;
     gap: 30px;
     width: 95%;
   }
   .ansewrs p {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 }
 .env-form {
@@ -24603,7 +24649,7 @@ footer a:hover {
     font-size: 2.5em;
   }
   .primary-contatc p {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 }
 .form-message {
@@ -24686,9 +24732,9 @@ footer a:hover {
   color: #1f2937;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1300px) {
   .form-message {
-    width: 95%;
+    width: 90%;
   }
 }
 .main-nav {
@@ -24704,7 +24750,8 @@ footer a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 10%;
+  gap: 20px;
+  min-width: 10%;
   padding: 4px 8px;
   color: #064e3b;
   background-color: #ffffff;
@@ -24734,12 +24781,16 @@ footer a:hover {
   color: #ffffff;
 }
 
-.navbar .navbar-brand {
-  color: #ffffff;
-  font-size: 1.3em;
+#basic-nav-dropdown :hove {
+  color: #6ee7b7;
 }
 
-@media screen and (max-width: 767px) {
+.navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width: 1000px) {
   .nav-button {
     visibility: hidden;
   }
@@ -24751,7 +24802,7 @@ footer a:hover {
     height: 0;
     padding-top: 2em;
   }
-  .navbar-toggler {
+  .navbar-toggler, .navbar-toggler svg {
     border: 0;
     box-shadow: none;
   }
@@ -24759,13 +24810,8 @@ footer a:hover {
     border: 0;
     box-shadow: none;
   }
-  .navbar-toggler-icon {
-    filter: invert(1);
-  }
-  .navbar-toggler-icon:hover {
-    filter: invert(1);
-  }
   #basic-navbar-nav {
+    font-size: 1.2em;
     margin-top: 2em;
   }
 }
@@ -24787,7 +24833,7 @@ footer a:hover {
   position: relative;
   width: 30%;
   gap: 20px;
-  min-height: 530px;
+  min-height: 550px;
   max-height: 1000px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: #ffffff;
@@ -24896,9 +24942,15 @@ footer a:hover {
   height: 18px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .service-cards {
-    width: 95%;
+    width: 90%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1300px) {
+  .service-cards {
+    min-height: 570px;
+    width: 60%;
   }
 }
 * {

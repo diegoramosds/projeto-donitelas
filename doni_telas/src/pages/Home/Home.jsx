@@ -2,14 +2,21 @@ import { Users, Award, ArrowRight, Phone, Activity } from 'lucide-react';
 import CountUp from 'react-countup';
 
 import { motion } from "motion/react"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 import ServiceCards from '../../components/ServiceCards/ServiceCards';
 import { featuredServices } from "../../data/ItemFeaturedServices"
 
 const Home = () => {
 
+const navigate = useNavigate();
+
 const showFeedback = () => {
+const feedbacks = window.document.getElementById('feedbacks');
+
+navigate('/work')
+
+scrollTo(feedbacks)
 
 }
   return (
@@ -40,8 +47,8 @@ const showFeedback = () => {
         </div>
 
         <div className='options'>
-          <button className='request-quote-button'><Link to='/contact'>Orçamento</Link> </button>
-          <button className='my-services-button'><Link to='/work'>Serviços</Link></button>
+        <Link to='/contact'><button className='request-quote-button'>Orçamento </button></Link>
+        <Link to='/work'><button className='my-services-button'>Serviços</button></Link>
         </div>
 
         </motion.div>
@@ -89,9 +96,9 @@ const showFeedback = () => {
       </div>
 
       <div className='feedbacks-home'>
-        <Link to='/work'>
+        
           <button onClick={showFeedback}> <span>Opiniões de Clientes</span> <span><ArrowRight /> </span> </button>
-        </Link>
+        
       </div>
 
       <div className='important-works'>

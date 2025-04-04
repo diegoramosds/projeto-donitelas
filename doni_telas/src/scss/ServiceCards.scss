@@ -15,7 +15,7 @@
     position: relative;
     width: 30%;
     gap: 20px;
-    min-height: 530px;
+    min-height: 550px;
     max-height: 1000px;
     box-shadow: #63636333 0px 2px 8px 0px;
     background-color: #ffffff;
@@ -54,8 +54,6 @@ transition: scale 0.4s ease-in-out;
     .learn-more  {
     width: 100%;
     }
-
-
     .learn-more button {
         display: flex;
         margin: 0 auto;
@@ -113,10 +111,16 @@ transition: scale 0.4s ease-in-out;
         height: 18px;
         }
 
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .service-cards {
-        width: 95%;
+        width: 90%;
+    }
+}
+
+@media screen and  (min-width: 769px) and  (max-width: 1300px) {
+    .service-cards {
+        min-height: 570px;
+        width: 60%;
     }
 
 }
