@@ -1,9 +1,9 @@
 .main-about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .primary-about {
@@ -36,7 +36,6 @@
   margin-top: 5em;
   margin-left: 1.7em;
   margin-bottom: 3em;
-
 }
 .about-details {
   display: flex;
@@ -56,11 +55,11 @@
 .text-about h1 {
   color: #111827;
   font-size: 3em;
-  }
-  .text-about p {
-    color: #4b5563;
-    font-size: 1.1em;
-    width: 95%;
+}
+.text-about p {
+  color: #4b5563;
+  font-size: 1.1em;
+  width: 95%;
 }
 
 .photo-about {
@@ -87,7 +86,7 @@
   transition: scale 0.4s ease-in-out;
 }
 .photo-about img:hover {
-scale: 1.01;
+  scale: 1.01;
 }
 
 .icon-compromise {
@@ -97,13 +96,13 @@ scale: 1.01;
   gap: 20px;
   margin-top: 1em;
 }
-.icon-compromise svg{
-background-color: #6ee7b742;
-color: #064e3b;
-width: 3.3em;
-height: 3.3em;
-padding: 10px;
-border-radius: 40px;
+.icon-compromise svg {
+  background-color: #6ee7b742;
+  color: #064e3b;
+  width: 3.3em;
+  height: 3.3em;
+  padding: 10px;
+  border-radius: 40px;
 }
 .text-compromise {
   display: flex;
@@ -112,14 +111,13 @@ border-radius: 40px;
   width: 100%;
 }
 .text-compromise h6 {
-font-weight: bolder;
-margin: 0;
-
+  font-weight: bolder;
+  margin: 0;
 }
 .text-compromise p {
-margin: 0;
-font-size: .9em;
-color: #4b5563;
+  margin: 0;
+  font-size: 0.9em;
+  color: #4b5563;
 }
 
 .about-values {
@@ -137,22 +135,22 @@ color: #4b5563;
   padding: 5px;
 }
 
-.text-value h1{
-color: #111827;
-font-weight: bolder;
+.text-value h1 {
+  color: #111827;
+  font-weight: bolder;
 }
 .text-value p {
-color: #4b5563;
-font-size: 1.2em;
+  color: #4b5563;
+  font-size: 1.2em;
 }
 
-.board-about  {
+.board-about {
   display: flex;
   word-break: break-all;
   width: 100%;
   gap: 30px;
 }
-.board-details-about{
+.board-details-about {
   display: flex;
   justify-content: left;
   color: #4b5563;
@@ -165,10 +163,10 @@ font-size: 1.2em;
   padding: 5px;
   transition: all 0.4s;
 }
-.board-details-about:hover{
+.board-details-about:hover {
   box-shadow: #63636333 0px 8px 16px 0px;
 }
-.board-details-about svg{
+.board-details-about svg {
   width: 3.3em;
   height: 3.3em;
   font-weight: 100;
@@ -180,21 +178,20 @@ font-size: 1.2em;
 }
 
 .text-board {
-display: flex;
-flex-direction: column;
-gap: 20px;
-text-align: left;
-margin: 1em;
-padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left;
+  margin: 1em;
+  padding: 10px;
 }
-.text-board h4{
-color: #1f2937;
-font-weight: bold;
+.text-board h4 {
+  color: #1f2937;
+  font-weight: bold;
 }
-.text-board p{
-width: 90%;
+.text-board p {
+  width: 90%;
 }
-
 
 @media screen and (max-width: 768px) {
   .primary-about h1 {
@@ -219,56 +216,54 @@ width: 90%;
   .text-about h1 {
     color: #111827;
     font-size: 2em;
-    }
-    .text-about p {
-      width: 99%;
+  }
+  .text-about p {
+    width: 99%;
   }
 
-
-    .icon-compromise {
-      width: 95%;
-      margin-top: 2em;
-      margin-bottom: 3em;
-    }
-
-
-    .photo-about {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      margin: 0 auto;
-    }
-    .photo-about::before {
-      left: 5px;
-    }
-    .photo-about img {
-      width: 85%;
-      margin: 0 auto;
-    }
-
-    .text-value p {
-      font-size: 1.2em;
-      }
-
-      .board-about  {
-        align-items: center;
-        flex-direction: column;
+  .icon-compromise {
+    width: 95%;
+    margin-top: 2em;
+    margin-bottom: 3em;
   }
 
-      .board-details-about{
-        width: 95%;
-      }
+  .photo-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .photo-about::before {
+    left: 5px;
+  }
+  .photo-about img {
+    width: 85%;
+    margin: 0 auto;
+  }
 
-      .text-board h4{
-        font-size: 1.3em;
-        }
-        .text-board p{
-        width: 95%;
-        }
+  .text-value p {
+    font-size: 1.2em;
+  }
+
+  .board-about {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .board-details-about {
+    width: 95%;
+  }
+
+  .text-board h4 {
+    font-size: 1.3em;
+  }
+  .text-board p {
+    width: 95%;
+  }
 }
 
-@media screen and  (min-width: 769px) and (max-width: 1000px) {
+@media screen and (min-width: 769px) and (max-width: 1000px) {
   .info-about {
     display: flex;
     flex-direction: column;
@@ -280,46 +275,41 @@ width: 90%;
     flex-direction: column;
     width: 90%;
   }
-    .text-about p {
-      width: 99%;
+  .text-about p {
+    width: 99%;
   }
 
-
-    .icon-compromise {
-      width: 95%;
-      margin-top: 2em;
-      margin-bottom: 3em;
-    }
-
-    .photo-about {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      margin: 0 auto;
-    }
-
-    .photo-about::before {
-      left: 40px;
-    }
-    .photo-about img {
-      width: 85%;
-      margin: 0 auto;
-    }
-
-      .board-about  {
-        align-items: center;
-        flex-direction: column;
+  .icon-compromise {
+    width: 95%;
+    margin-top: 2em;
+    margin-bottom: 3em;
   }
 
-      .board-details-about{
-        width: 80%;
-      }
-        .text-board p{
-        width: 85%;
-        }
+  .photo-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
   }
 
+  .photo-about::before {
+    left: 40px;
+  }
+  .photo-about img {
+    width: 85%;
+    margin: 0 auto;
+  }
 
+  .board-about {
+    align-items: center;
+    flex-direction: column;
+  }
 
-
+  .board-details-about {
+    width: 80%;
+  }
+  .text-board p {
+    width: 85%;
+  }
+}

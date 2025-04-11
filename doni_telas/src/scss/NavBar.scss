@@ -1,72 +1,77 @@
 .main-nav {
-position: fixed;
-width: 100%;
-z-index: 10;
-opacity: 0.98;
-box-shadow: rgba(0, 0, 0, 0.103) 0px 25px 20px -20px;
-background-color: #111827;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  opacity: 0.98;
+  box-shadow: rgba(0, 0, 0, 0.103) 0px 25px 20px -20px;
+  background-color: #111827;
 }
 .nav-button {
-display: flex;
-align-items: center;
-justify-content: space-around;
-gap: 20px;
-min-width: 10%;
-padding: 4px 8px;
-color: #064e3b;
-background-color: #ffffff;
-border-radius: 3px;
-border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  min-width: 10%;
+  padding: 4px 8px;
+  color: #064e3b;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 0;
 }
 .nav-button:hover {
-background-color: #ecfdf5;
+  background-color: #ecfdf5;
 }
 .navbar .nav-link {
-margin-right: 1.3em;
-color: #ffffff;
-font-weight: 600;
+  margin-right: 1.3em;
+  color: #ffffff;
+  font-weight: 600;
 }
-.navbar .nav-link:hover{
-color: #6ee7b7;
+.navbar .nav-link:hover {
+  color: #6ee7b7;
 }
-.navbar .dropdown-item a {
-color: #111827;
+.navbar .dropdown-item {
+  color: #111827;
+}
+.navbar .dropdown-item:focus {
+  color: #111827;
+  outline: none;
+  background-color: #ecfdf556;
 }
 #basic-nav-dropdown {
-    color: #ffffff;
+  color: #ffffff;
 }
-#basic-nav-dropdown :hove {
-    color: #6ee7b7;
+#basic-nav-dropdown :hover {
+  color: #6ee7b7;
 }
 .navbar .navbar-brand {
-    color: #ffffff;
-    font-size: 1.5em;
+  color: #ffffff;
+  font-size: 1.5em;
 }
-
 
 @media screen and (max-width: 1000px) {
-.nav-button {
-visibility: hidden;
-}
-.options-nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 100%;
-height: 0;
-padding-top: 2em;
-}
+  .nav-button {
+    visibility: hidden;
+  }
+  .options-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 0;
+    padding-top: 2em;
+  }
 
-.navbar-toggler, .navbar-toggler svg {
+  .navbar-toggler,
+  .navbar-toggler svg {
     border: 0;
     box-shadow: none;
-}
-.navbar-toggler:focus {
+  }
+  .navbar-toggler:focus {
     border: 0;
     box-shadow: none;
-}
-#basic-navbar-nav {
+  }
+  #basic-navbar-nav {
     font-size: 1.2em;
     margin-top: 2em;
-}
+  }
 }
