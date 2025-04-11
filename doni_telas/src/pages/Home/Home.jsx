@@ -12,11 +12,8 @@ const Home = () => {
 const navigate = useNavigate();
 
 const showFeedback = () => {
-const feedbacks = window.document.getElementById('feedbacks');
 
-navigate('/work')
-
-scrollTo(feedbacks)
+navigate("/work", { state: { scrollTo: "feedbacks" } });
 
 }
   return (
