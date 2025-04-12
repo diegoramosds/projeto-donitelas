@@ -1,8 +1,7 @@
 # 🛠️ Donitelas
 
 ## 📽️ Demonstração
-
-![Demonstração do site Donitelas](https://github.com/user-attachments/assets/e624f49c-47ea-4e69-8012-270d9e5b95cd)
+![donitelas](https://github.com/user-attachments/assets/52bfb652-ce1c-405a-bed7-2d5b99cb0cd8)
 
 ---
 
