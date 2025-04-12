@@ -8,7 +8,7 @@
 
 ## 💻 Sobre o Projeto
 
-Este projeto foi desenvolvido para a **Donitelas**, uma empresa com mais de 40 anos de experiência na instalação e manutenção de telas, cercas e grades de segurança. O site apresenta de forma clara os serviços oferecidos, inclui depoimentos de clientes e uma seção de perguntas frequentes para esclarecer dúvidas comuns. :contentReference[oaicite:0]{index=0}&#8203;:contentReference[oaicite:1]{index=1}
+Este projeto foi desenvolvido para a **Donitelas**, uma empresa com mais de 40 anos de experiência na instalação e manutenção de telas, cercas e grades de segurança. O site apresenta de forma clara os serviços oferecidos, inclui depoimentos de clientes e uma seção de perguntas frequentes para esclarecer dúvidas comuns.
 
 ---
 
@@ -25,16 +25,13 @@ Este projeto foi desenvolvido para a **Donitelas**, uma empresa com mais de 40 a
 ## ✨ Destaques
 
 ### 🛡️ Apresentação dos Serviços
-
-:contentReference[oaicite:2]{index=2}&#8203;:contentReference[oaicite:3]{index=3}
+Exposição clara dos serviços de instalação e manutenção de telas, cercas e grades de segurança, com detalhes sobre cada um.
 
 ### 💬 Feedbacks de Clientes
-
-:contentReference[oaicite:4]{index=4}&#8203;:contentReference[oaicite:5]{index=5}
+Seção dedicada a depoimentos de clientes, proporcionando confiança e credibilidade aos visitantes.
 
 ### ❓ Perguntas Frequentes
-
-:contentReference[oaicite:6]{index=6}&#8203;:contentReference[oaicite:7]{index=7}
+Área destinada a esclarecer dúvidas comuns dos clientes, facilitando o entendimento dos serviços oferecidos.​
 
 ---
 
