@@ -1,9 +1,27 @@
+import { motion } from "motion/react";
+import PropTypes from "prop-types";
 
-
-const BoardComponent = ({title, subTitle, boardIcon}) => {
+const BoardComponent = ({ title, subTitle, boardIcon }) => {
   return (
-    <div className=''>BoardComponent</div>
-  )
-}
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.3 }}
+      className="board-details"
+    >
+      <p>
+        <span>{boardIcon}</span>
+        <span>{title}</span>
+        <span>{subTitle}</span>
+      </p>
+    </motion.div>
+  );
+};
 
-export default BoardComponent
+export default BoardComponent;
+
+BoardComponent.propTypes = {
+  title: PropTypes.string,
+  subTitle: PropTypes.string,
+  boardIcon: PropTypes.string,
+};
