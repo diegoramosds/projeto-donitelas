@@ -12,7 +12,6 @@ import Work from './pages/Work/Work'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from "./components/Footer/Footer"
 import Information from "./pages/Information/Information"
-import ScrollToTop from "./components/ScrollTop/ScrollTop"
 import Contact from "./pages/Contact/Contact"
 
 function App() {
@@ -20,7 +19,6 @@ function App() {
   return (
     <>
         <BrowserRouter>
-        <ScrollToTop />
         <NavBar />
           <Routes>
             <Route path="/" element={<Home />}/>
