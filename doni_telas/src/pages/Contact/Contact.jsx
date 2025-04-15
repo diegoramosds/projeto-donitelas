@@ -1,67 +1,48 @@
-import { LocateIcon, Mail, Phone } from 'lucide-react'
+import { LocateIcon, Mail, Phone } from "lucide-react";
 
-import { motion } from "motion/react"
-import FormMessage from '../../components/FormMessage/FormMessage'
-
+import { motion } from "motion/react";
+import FormMessage from "../../components/FormMessage/FormMessage";
+import BoardComponent from "../../components/BoardComponent/BoardComponent";
 
 const Contact = () => {
   return (
-    <div className='contact-form'>
-      <div className='primary-contatc'>
-      <motion.div
+    <div className="contact-form">
+      <div className="primary-contatc">
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          >
-                <h1>Entre em Contato</h1>
-                <p>Estamos prontos para atender sua necessidade. Entre em contato para um orçamento sem compromisso.</p>
-
-          </motion.div>
+        >
+          <h1>Entre em Contato</h1>
+          <p>
+            Estamos prontos para atender sua necessidade. Entre em contato para
+            um orçamento sem compromisso.
+          </p>
+        </motion.div>
       </div>
 
       <div className="info-profile">
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="board-details"
-          >
-            <p>
-              <span><Phone size={30}/></span>
-              <span className='title-board'>Telefone</span>
-              <span>(11) 96857-9924</span>
-            </p>
-        </motion.div>
+        <BoardComponent
+          boardIcon={<Phone size={30} />}
+          title={<span className="title-board">Telefone</span>}
+          subTitle={"(11) 96857-9924"}
+        />
 
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="board-details"
-          >
-            <p>
-              <span><Mail size={30}/></span>
-              <span className='title-board'>Email</span>
-              <span>telasdoni@gmail.com</span>
-            </p>
-        </motion.div>
+        <BoardComponent
+          boardIcon={<Mail size={30} />}
+          title={<span className="title-board">Email</span>}
+          subTitle={"telasdoni@gmail.com"}
+        />
 
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="board-details"
-          >
-            <p>
-              <span><LocateIcon size={30}/></span>
-              <span className='title-board'>Endereço</span>
-              <span>Vargem Grande Paulista- SP</span>
-            </p>
-        </motion.div>
+        <BoardComponent
+          boardIcon={<LocateIcon size={30} />}
+          title={<span className="title-board">Endereço</span>}
+          subTitle={"Vargem Grande Paulista- SP"}
+        />
       </div>
-        <FormMessage />
+      <FormMessage />
     </div>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
