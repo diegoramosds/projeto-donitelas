@@ -14,10 +14,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
         >
           <h1>Entre em Contato</h1>
-          <p>
-            Estamos prontos para atender sua necessidade. Entre em contato para
-            um orçamento sem compromisso.
-          </p>
+          <p>Entre em contato para um orçamento sem compromisso.</p>
         </motion.div>
       </div>
 
