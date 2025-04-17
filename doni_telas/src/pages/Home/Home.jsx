@@ -75,7 +75,7 @@ const Home = () => {
           boardIcon={<Activity size={30} />}
           title={
             <span className="count-up">
-              +<CountUp start={40} end={40} duration={4} />
+              +<CountUp start={400} end={599} duration={4} />
             </span>
           }
           subTitle={"Projetos realizados"}
