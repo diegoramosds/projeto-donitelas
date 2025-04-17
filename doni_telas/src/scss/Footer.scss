@@ -1,19 +1,18 @@
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 200px;
-    background-color: #111827;
-    box-shadow: 0 -4px 6px -3px #000000e7;
-    color: #ffffff;
-    width: 100%;
-    margin-top: 250px;
-    opacity: 0.98;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  background-color: #111827;
+  box-shadow: 0 -4px 6px -3px #000000e7;
+  color: #ffffff;
+  width: 100%;
+  padding: 5px;
+  opacity: 0.98;
 }
 footer a {
-color: #ffffff;
+  color: #ffffff;
 }
-footer a:hover   {
-    color: #6ee7b7;
+footer a:hover {
+  color: #6ee7b7;
 }
-
