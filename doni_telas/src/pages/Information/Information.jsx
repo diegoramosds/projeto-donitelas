@@ -12,10 +12,7 @@ const Information = () => {
           transition={{ duration: 0.6 }}
         >
           <h1>Mais informações</h1>
-          <p>
-            Recursos adicionais e informações úteis sobre nossos produtos e
-            serviços
-          </p>
+          <p>Informações úteis sobre serviços</p>
         </motion.div>
       </div>
 
@@ -94,10 +91,8 @@ const Information = () => {
       <div className="contact-info">
         <div className="redirect-info">
           <h1>Mande sua mensagem</h1>
-          <p>
-            Entre em contato e tire suas duvida
-          </p>
-          <Link to='/contact'>
+          <p>Entre em contato e tire suas dúvidas</p>
+          <Link to="/contact">
             <button>
               {" "}
               <span>
