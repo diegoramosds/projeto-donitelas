@@ -8,7 +8,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "watch-css": "sass --watch --no-source-map src/scss/style.scss:src/css/style.css"
+    "watch-css": "sass --watch --no-source-map src/scss/style.scss:src/css/style.css",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -19,6 +20,7 @@
     "emailjs-com": "^3.2.0",
     "lucide-react": "^0.483.0",
     "motion": "^12.5.0",
+    "prettier": "^3.5.3",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.5",
