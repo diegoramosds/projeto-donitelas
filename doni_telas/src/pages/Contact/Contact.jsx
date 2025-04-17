@@ -14,7 +14,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
         >
           <h1>Entre em Contato</h1>
-          <p>Entre em contato para um orçamento sem compromisso.</p>
+          <p>Fale comigo para solicitar um orçamento sem compromisso.</p>
         </motion.div>
       </div>
 
@@ -34,7 +34,7 @@ const Contact = () => {
         <BoardComponent
           boardIcon={<LocateIcon size={30} />}
           title={<span className="title-board">Endereço</span>}
-          subTitle={"Vargem Grande Paulista- SP"}
+          subTitle={"Vargem Grande Paulista - SP"}
         />
       </div>
       <FormMessage />

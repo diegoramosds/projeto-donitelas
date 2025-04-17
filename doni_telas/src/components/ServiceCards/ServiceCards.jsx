@@ -1,12 +1,11 @@
 /* eslint-disable react/prop-types */
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, CircleAlert } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useState } from "react";
 
 const ServiceCards = ({
   textButtonCloseFeatures,
   textButtonOpenFeatures,
-  iconButton,
   itemsMap,
   titleFeatures,
 }) => {
@@ -43,12 +42,12 @@ const ServiceCards = ({
               {alreadyExpandedProjects && expandedProjects === service.id ? (
                 <button onClick={() => showProjectsFeatures()}>
                   <span>{textButtonOpenFeatures}</span>
-                  <span>{iconButton}</span>
+                  <span>{<CircleAlert />}</span>
                 </button>
               ) : (
                 <button onClick={() => showProjectsFeatures(service.id)}>
                   <span>{textButtonCloseFeatures}</span>
-                  <span>{iconButton}</span>
+                  <span>{<CircleAlert />}</span>
                 </button>
               )}
               <AnimatePresence>

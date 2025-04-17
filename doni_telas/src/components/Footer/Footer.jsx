@@ -52,8 +52,7 @@ const Footer = () => {
         <Row className="mt-3">
           <Col className="text-center">
             <small>
-              &copy; 2025 DIEGO RAMOS.
-              Todos os direitos reservados.
+              &copy; 2025 DIEGO RAMOS. Todos os direitos reservados.
             </small>
           </Col>
         </Row>

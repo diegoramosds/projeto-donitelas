@@ -63,7 +63,7 @@ function FormMessage() {
           <Form.Label>Seu nome</Form.Label>
           <Form.Control
             type="text"
-            placeholder="Insira seu nome"
+            placeholder="Digite seu nome"
             onChange={(e) => setName(e.target.value)}
             value={name}
             disabled={loading}
@@ -75,7 +75,7 @@ function FormMessage() {
           <Form.Label>E-mail</Form.Label>
           <Form.Control
             type="email"
-            placeholder="Insira seu email"
+            placeholder="Digite seu e-mail"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             disabled={loading}
@@ -96,7 +96,7 @@ function FormMessage() {
           />
         </Form.Group>
         <Form.Group className="mb-3" controlId="formMessage">
-          <Form.Label>Mande aqui sua dúvida</Form.Label>
+          <Form.Label>Escreva sua dúvida aqui</Form.Label>
           <Form.Control
             as="textarea"
             rows={3}
@@ -104,7 +104,7 @@ function FormMessage() {
             value={message}
             disabled={loading}
             required
-            placeholder="Sua mensagem aqui"
+            placeholder="Digite sua mensagem"
             className="form-control"
           />
         </Form.Group>

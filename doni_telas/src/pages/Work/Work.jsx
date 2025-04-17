@@ -9,7 +9,6 @@ import ServiceCards from "../../components/ServiceCards/ServiceCards";
 import { services } from "../../data/ItemServicesMap";
 import { customerReviews } from "../../data//ItemReviewsMap";
 
-import { CircleAlert } from "lucide-react";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -42,7 +41,7 @@ const Work = () => {
         >
           <h1>Projetos realizados</h1>
           <p>
-            Conheça alguns dos meus projetos realizados com excelência e
+            Conheça alguns dos projetos que desenvolvi com excelência e
             qualidade.
           </p>
         </motion.div>
@@ -52,7 +51,6 @@ const Work = () => {
         textButtonCloseFeatures="Exibir Detalhes"
         textButtonOpenFeatures="Ocultar Detalhes"
         titleFeatures="Características do Projeto"
-        iconButton={<CircleAlert />}
         itemsMap={services}
       />
 

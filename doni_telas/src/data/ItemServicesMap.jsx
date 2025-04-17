@@ -60,7 +60,7 @@ export const services = [
     image: work7,
     title: "Campo Society",
     subTitle:
-      "Instalação de tela com estrutura metálica com acabamentos reforçados para segurança e durabilidade, assegurando resistência contra impactos e condições climáticas adversas.",
+      "Instalação de tela com estrutura metálica e acabamentos reforçados para segurança e durabilidade, assegurando resistência contra impactos e condições climáticas adversas.",
     features: [
       "Estrutura metálica reforçada para sustentação das telas",
       "Tela de proteção de alta resistência",
@@ -119,7 +119,7 @@ export const services = [
     image: work8,
     title: "Cerca de Proteção",
     subTitle:
-      "Instalação de cerca com estrutura reforçada utilizando canaleta e mourão de concreto para maior resistência e durabilidade, garantindo segurança, estabilidade e proporcionando maior estabilidade.",
+      "Instalação de cerca com estrutura reforçada utilizando canaleta e mourão de concreto para maior resistência e durabilidade, garantindo segurança, com estabilidade reforçada para diversos ambientes.",
     features: [
       "Cercamento seguro e durável",
       "Mourões de concreto para maior estabilidade",

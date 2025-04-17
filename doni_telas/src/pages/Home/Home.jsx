@@ -34,7 +34,7 @@ const Home = () => {
 
             <p>
               Instalação e Manutenção de Telas | Cercas e Grades de Segurança |
-              Serviços de Construção e Reformas de quadras{" "}
+              Construção e Reformas de quadras{" "}
             </p>
           </div>
           <div></div>
@@ -94,13 +94,12 @@ const Home = () => {
 
       <div className="important-works">
         <h1>Tipos de Serviços</h1>
-        <p>Soluções de proteção completas para sua residência ou negócio.</p>
+        <p>Soluções completas de proteção para sua residência ou negócio.</p>
         <div>
           <ServiceCards
             textButtonCloseFeatures="Saiba Mais"
             textButtonOpenFeatures="Ocultar Detalhes"
             titleFeatures="Características"
-            iconButton={<ArrowRight />}
             itemsMap={featuredServices}
           />
           <div></div>
@@ -120,8 +119,8 @@ const Home = () => {
         <div className="redirect-zap">
           <h1>Solicite um Orçamento Grátis</h1>
           <p>
-            Entre em contato por WhatsApp para solicitar um orçamento sem
-            compromisso ou agende uma visita.
+            Entre em contato pelo WhatsApp para solicitar um orçamento sem
+            compromisso ou agendar uma visita.
           </p>
           <a
             href="https://wa.me/5511968579924?text=Olá,%20gostaria%20de%20solitar%20um%20orçamento"

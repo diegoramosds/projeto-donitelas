@@ -37,17 +37,17 @@ const About = () => {
               Minha <span className="important-words">História</span>
             </h1>
             <p>
-              Com mais de 40 anos de experiêncio, dedico minha trajetória à
+              Com mais de 40 anos de experiência, dedico minha trajetória à
               prestação de serviços de instalação e manutenção de telas e
               cercas. Cada projeto que realizo é feito com atenção aos detalhes
               e compromisso com a qualidade.
             </p>
             <p>
-              Soluções práticas, duradouras e que atendam às necessidades de
-              cada cliente. Meu objetivo é construir relações de confianço e
-              oferecer um atendimento personalizado, onde cada etapa do processo
-              é feita com responsabilidado e cuidado, garantindo a satisfação e
-              a segurançao de quem confia no meu trabalho.
+              Ofereço soluções práticas, duradouras e adaptadas às necessidades
+              de cada cliente. Meu objetivo é construir relações de confiança e
+              oferecer um atendimento personalizado, em que cada etapa do
+              processo é realizada com responsabilidade e cuidado, garantindo a
+              satisfação e a segurança de quem confia no meu trabalho.
             </p>
           </div>
           <div className="icon-compromise">
@@ -58,7 +58,10 @@ const About = () => {
             </div>
             <div className="text-compromise">
               <h6>Compromisso com Qualidade</h6>
-              <p>Utilizando apenas materiais de qualidade</p>
+              <p>
+                Utilizo apenas materiais de alta qualidade para garantir
+                segurança.
+              </p>
             </div>
           </div>
         </motion.div>
@@ -94,7 +97,7 @@ const About = () => {
               </span>
               <h4>Segurança</h4>
               <p>
-                Meu compromisso principal é com a segurança dos nossos clientes,
+                Meu compromisso principal é com a segurança dos meus clientes,
                 oferecendo produtos testados e aprovados conforme as normas de
                 segurança.
               </p>
@@ -113,9 +116,9 @@ const About = () => {
               </span>
               <h4>Qualidade</h4>
               <p>
-                Utilizamos apenas materiais de primeira linha e trabalhamos com
-                processos rigorosos de instalação para garantir a durabilidade
-                dos nossos produtos.
+                Utilizo apenas materiais de primeira linha e sigo processos
+                rigorosos de instalação para garantir a durabilidade dos meus
+                produtos.
               </p>
             </div>
           </motion.div>
@@ -139,30 +142,6 @@ const About = () => {
           </motion.div>
         </div>
       </div>
-
-      {/* <div className='places'>
-        <h3>Algumas localidades que ja trabalhei e tenho disponibilidade para trabalhar</h3>
-        <div>
-          <ul>
-            <li>São paulo</li>
-            <li>Sorocaba</li>
-            <li>Vargem grande paulista</li>
-            <li>Cotia</li>
-            <li>São roque</li>
-            <li>Mairinque</li>
-            <li>Ibiúna</li>
-            <li>Indaiatuba</li>
-          </ul>
-          <p>Não achou sua localidade? <Link to="/information"><strong>CLIQUE AQUI</strong></Link> e mande sua mensagem
-           para verificar a disponibilidade.</p>
-        </div>
-      </div> */}
-
-      {/* <div className='about-fedbacks'>
-          <TextCarousel />
-        </div> */}
-      {/* 
-        <AccordionAbout />    */}
     </div>
   );
 };
