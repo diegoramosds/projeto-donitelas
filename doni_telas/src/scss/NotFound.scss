@@ -1,0 +1,24 @@
+.not-found {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 5em;
+}
+
+.not-found h1 {
+  font-size: 3em;
+  color: #111827;
+}
+
+.not-found button {
+  border: 0;
+  background-color: #047857;
+  color: #ffffff;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+.not-found button:hover {
+  background-color: #10b981;
+}

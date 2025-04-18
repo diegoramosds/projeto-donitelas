@@ -13,6 +13,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/Footer/Footer";
 import Information from "./pages/Information/Information";
 import Contact from "./pages/Contact/Contact";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -26,8 +27,7 @@ function App() {
           <Route path="/work" element={<Work />} />
           <Route path="/information" element={<Information />} />
           <Route path="/contact" element={<Contact />} />
-          {/* <Route index element={<Home />} /> */}
-          {/* <Route path="*" element={<NoPage />} /> */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>
