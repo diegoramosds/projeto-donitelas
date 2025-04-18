@@ -1,5 +1,5 @@
 // Import all of Bootstrap's JS
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 
 //pages
 import Home from "./pages/Home/Home";
