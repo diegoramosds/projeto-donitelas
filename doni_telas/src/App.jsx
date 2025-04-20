@@ -21,7 +21,6 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
         <ScrollToTop />
         {!isfound && <NavBar />}
         <Routes>
@@ -34,7 +33,6 @@ function App() {
           <Route path="/404" element={<NotFound />} />
         </Routes>
         {!isfound && <Footer />}        
-      </BrowserRouter>
     </>
   );
 }
