@@ -1,5 +1,5 @@
 // Import all of Bootstrap's JS
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
 
 //pages
 import Home from "./pages/Home/Home";
@@ -16,20 +16,24 @@ import Contact from "./pages/Contact/Contact";
 import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
+   const location = useLocation()
+   const isfound = location.pathname === '/404'
+
   return (
     <>
       <BrowserRouter>
         <ScrollToTop />
-        <NavBar />
+        {!isfound && <NavBar />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/work" element={<Work />} />
           <Route path="/information" element={<Information />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="*" element={<Navigate to='/404'/>} />
+          <Route path="/404" element={<NotFound />} />
         </Routes>
-        <Footer />
+        {!isfound && <Footer />}        
       </BrowserRouter>
     </>
   );
