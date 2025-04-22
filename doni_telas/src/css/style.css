@@ -23748,7 +23748,7 @@ textarea.form-control-lg {
 .options button {
   min-width: 300px;
   height: 45px;
-  padding: 10px 20px;
+  padding: 10px 22px;
   color: #ffffff;
   border-radius: 7px;
   font-size: 1.1em;
@@ -23762,7 +23762,7 @@ textarea.form-control-lg {
 }
 
 .request-quote-button {
-  background-color: #10b981;
+  background-color: rgba(16, 185, 129, 0.9333333333);
   border: 0;
 }
 
