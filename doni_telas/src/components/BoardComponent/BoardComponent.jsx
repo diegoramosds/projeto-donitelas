@@ -21,7 +21,7 @@ const BoardComponent = ({ title, subTitle, boardIcon }) => {
 export default BoardComponent;
 
 BoardComponent.propTypes = {
-  title: PropTypes.node.isRequired  ,
+  title: PropTypes.node.isRequired,
   subTitle: PropTypes.node.isRequired,
-  boardIcon: PropTypes.node.isRequired,      
+  boardIcon: PropTypes.node.isRequired,
 };

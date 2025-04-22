@@ -8,6 +8,7 @@ import work7 from "../img/work7.jpg";
 import work8 from "../img/work8.jpg";
 import work9 from "../img/work9.jpg";
 import work10 from "../img/work10.jpg";
+import work11 from "../img/work11.jpg";
 
 export const services = [
   {
@@ -98,9 +99,23 @@ export const services = [
       "Maior segurança para os jogadores e espectadores",
     ],
   },
-
   {
     id: 7,
+    image: work11,
+    title: "Quadra Esportiva",
+    subTitle:
+      "Instalação completa de telas e acabamentos em uma quadra de tênis, oferecendo segurança, durabilidade e um acabamento visual limpo e profissional para o espaço esportivo.",
+    features: [
+      "Estrutura metálica resistente com pintura especial",
+      "Telas de proteção ao redor de toda a quadra",
+      "Acabamento reforçado para maior durabilidade",
+      "Ideal para práticas esportivas com segurança",
+      "Instalação realizada com precisão e cuidado nos detalhes",
+    ],
+  },
+
+  {
+    id: 8,
     image: work5,
     title: "Cerca de Proteção",
     subTitle:
@@ -115,7 +130,7 @@ export const services = [
   },
 
   {
-    id: 8,
+    id: 9,
     image: work8,
     title: "Cerca de Proteção",
     subTitle:
@@ -130,7 +145,7 @@ export const services = [
   },
 
   {
-    id: 9,
+    id: 10,
     image: work9,
     title: "Cerca de Proteção",
     subTitle:
@@ -145,7 +160,7 @@ export const services = [
   },
 
   {
-    id: 10,
+    id: 11,
     image: work10,
     title: "Tela de Proteção",
     subTitle:

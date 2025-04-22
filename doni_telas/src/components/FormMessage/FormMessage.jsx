@@ -31,7 +31,7 @@ function FormMessage() {
         "service_fiqxtwp",
         "template_mg9f27p",
         templateParams,
-        "B0mlsy15Z3WowbyQr"
+        "B0mlsy15Z3WowbyQr",
       )
       .then(() => {
         setName("");

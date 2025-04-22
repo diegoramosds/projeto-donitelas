@@ -24767,21 +24767,9 @@ footer a:hover {
   background-color: #111827;
 }
 
-.nav-button {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 10px;
-  min-width: 5%;
-  padding: 4px 7px;
-  color: #064e3b;
-  background-color: #ffffff;
-  border-radius: 3px;
-  border: 0;
-}
-
-.nav-button:hover {
-  background-color: #ecfdf5;
+.navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 1.5em;
 }
 
 .navbar .nav-link {
@@ -24790,7 +24778,8 @@ footer a:hover {
   font-weight: 600;
 }
 
-.navbar .nav-link:hover {
+.navbar .nav-link:hover,
+#basic-nav-dropdown:hover {
   color: #6ee7b7;
 }
 
@@ -24808,13 +24797,21 @@ footer a:hover {
   color: #ffffff;
 }
 
-#basic-nav-dropdown :hover {
-  color: #6ee7b7;
+.nav-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+  min-width: 5%;
+  padding: 4px 7px;
+  color: #064e3b;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 0;
 }
 
-.navbar .navbar-brand {
-  color: #ffffff;
-  font-size: 1.5em;
+.nav-button:hover {
+  background-color: #ecfdf5;
 }
 
 @media screen and (max-width: 1000px) {
@@ -24855,13 +24852,13 @@ footer a:hover {
 
 .service-cards {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   overflow: hidden;
   position: relative;
   width: 30%;
   gap: 20px;
-  min-height: 550px;
+  min-height: 580px;
   max-height: 1000px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: #ffffff;
@@ -24977,7 +24974,7 @@ footer a:hover {
 }
 @media screen and (min-width: 768px) and (max-width: 1300px) {
   .service-cards {
-    min-height: 570px;
+    min-height: 580px;
     width: 60%;
   }
 }
@@ -25030,16 +25027,18 @@ footer a:hover {
   }
 }
 .not-found {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   height: 100vh;
   margin: 0 auto;
-  margin-top: 5em;
 }
 
 .not-found h1, .not-found .h1 {
   font-size: 3em;
-  color: #111827;
+  color: #047857;
 }
 
 .not-found button {
