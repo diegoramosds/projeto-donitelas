@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="text-white mt-5">
+    <footer className="text-white">
       <Container>
         <Row>
           <Col md={4}>
@@ -52,7 +52,7 @@ const Footer = () => {
         <Row className="mt-3">
           <Col className="text-center">
             <small>
-              &copy; 2025 DIEGO RAMOS. Todos os direitos reservados.
+              &copy;2025 DIEGO RAMOS. Todos os direitos reservados.
             </small>
           </Col>
         </Row>

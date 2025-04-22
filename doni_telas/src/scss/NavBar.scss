@@ -11,6 +11,7 @@
   color: #ffffff;
   font-size: 1.5em;
 }
+
 .navbar .nav-link {
   margin-right: 1.3em;
   color: #ffffff;
@@ -54,6 +55,7 @@
   .nav-button {
     visibility: hidden;
   }
+
   .options-nav {
     display: flex;
     justify-content: space-between;
@@ -74,6 +76,8 @@
   }
   #basic-navbar-nav {
     font-size: 1.2em;
+    max-height: calc(100vh - 100px);
     margin-top: 2em;
+    overflow-y: auto;
   }
 }

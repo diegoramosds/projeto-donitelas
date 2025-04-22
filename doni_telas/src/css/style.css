@@ -24012,6 +24012,10 @@ footer {
   width: 100%;
   padding: 5px;
   opacity: 0.98;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 footer a {
@@ -24397,7 +24401,7 @@ footer a:hover {
   background-color: #ffffff;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   width: 400px;
-  min-height: 200px;
+  height: 200px;
   border-radius: 10px;
   padding: 1.6em;
   text-align: left;
@@ -24455,11 +24459,11 @@ footer a:hover {
     font-size: 1.1em;
   }
   .clients-services p {
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .floating-cards-details {
     width: 350px;
-    min-height: 200px;
+    min-height: 190px;
     border-radius: 10px;
     padding: 1.2em;
   }
@@ -24626,6 +24630,7 @@ footer a:hover {
   align-items: center;
   flex-direction: column;
   width: 100%;
+  height: 100vh;
   margin: 0 auto;
 }
 
@@ -24837,7 +24842,9 @@ footer a:hover {
   }
   #basic-navbar-nav {
     font-size: 1.2em;
+    max-height: calc(100vh - 100px);
     margin-top: 2em;
+    overflow-y: auto;
   }
 }
 .service-details {
@@ -25067,10 +25074,12 @@ body {
 }
 
 body {
+  position: relative;
   background: linear-gradient(#ffffff, rgba(221, 250, 236, 0.5137254902));
   max-width: 100vw;
   width: 100vw;
   min-height: 100vh;
+  padding-bottom: 200px;
 }
 
 h3, .h3,

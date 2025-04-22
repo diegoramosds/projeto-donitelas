@@ -26,7 +26,6 @@ const NavBar = () => {
         closeMenu();
       }
     }
-
     document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
