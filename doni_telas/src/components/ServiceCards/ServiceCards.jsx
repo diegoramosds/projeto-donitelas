@@ -32,7 +32,7 @@ const ServiceCards = ({
             key={service.id}
           >
             <div className="service-images">
-              <img src={service.image} alt="" />
+              <img src={service.image} alt={service.alt} />
             </div>
             <div className="text-details">
               <h1>{service.title}</h1>

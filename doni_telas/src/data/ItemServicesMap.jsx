@@ -14,6 +14,7 @@ export const services = [
   {
     id: 1,
     image: work1,
+    alt: "Campo esportivo completo com rede de proteção perimetral em estrutura metálica reforçada e traves profissionais",
     title: "Campo Esportivo",
     subTitle:
       "Montagem completa de campo com redes de proteção, garantindo segurança e durabilidade para a prática esportiva, além de resistência contra impactos e melhor delimitação do espaço de jogo.",
@@ -25,10 +26,10 @@ export const services = [
       "Acabamento com pintura e detalhes para maior durabilidade",
     ],
   },
-
   {
     id: 2,
     image: work2,
+    alt: "Campo esportivo com rede de proteção lateral e superior, traves com redes brancas e acabamento em madeira",
     title: "Campo Esportivo",
     subTitle:
       "Montagem completa de campo com acabamento reforçado e instalação de redes de proteção, garantindo maior segurança, resistência a impactos e durabilidade para a prática esportiva.",
@@ -40,10 +41,10 @@ export const services = [
       "Estrutura reforçada para maior resistência e durabilidade",
     ],
   },
-
   {
     id: 3,
     image: work3,
+    alt: "Campo society com grama sintética verde, cercado por tela metálica reforçada e linhas de jogo demarcadas",
     title: "Campo Society",
     subTitle:
       "Montagem completa de campo society com instalação de telas de proteção, grama sintética de alta qualidade e demarcação oficial das linhas, garantindo resistência, segurança e padrão para jogos.",
@@ -55,10 +56,10 @@ export const services = [
       "Estrutura metálica resistente para suporte das telas",
     ],
   },
-
   {
     id: 4,
     image: work7,
+    alt: "Estrutura metálica com tela de proteção para campo society, fixada em base de alvenaria para resistência",
     title: "Campo Society",
     subTitle:
       "Instalação de tela com estrutura metálica e acabamentos reforçados para segurança e durabilidade, assegurando resistência contra impactos e condições climáticas adversas.",
@@ -70,10 +71,10 @@ export const services = [
       "Instalação adequada para ambientes esportivos",
     ],
   },
-
   {
     id: 5,
     image: work4,
+    alt: "Quadra poliesportiva com tela de proteção azul, tabelas de basquete e piso demarcado para múltiplos esportes",
     title: "Quadra Esportiva",
     subTitle:
       "Instalação de telas de proteção e acabamentos gerais para garantir segurança e durabilidade da quadra, proporcionando um ambiente adequado para a prática esportiva.",
@@ -88,6 +89,7 @@ export const services = [
   {
     id: 6,
     image: work6,
+    alt: "Quadra esportiva coberta com tela de proteção transparente, traves de futebol e estrutura metálica cinza",
     title: "Quadra Esportiva",
     subTitle:
       "Montagem completa de quadra esportiva com instalação de telas de proteção para maior segurança, resistência e conforto dos jogadores durante as partidas.",
@@ -102,6 +104,7 @@ export const services = [
   {
     id: 7,
     image: work11,
+    alt: "Quadra de tênis com tela de proteção verde ao redor, piso azul e estrutura metálica anti-corrosão",
     title: "Quadra Esportiva",
     subTitle:
       "Instalação completa de telas e acabamentos em uma quadra de tênis, oferecendo segurança, durabilidade e um acabamento visual limpo e profissional para o espaço esportivo.",
@@ -113,10 +116,10 @@ export const services = [
       "Instalação realizada com precisão e cuidado nos detalhes",
     ],
   },
-
   {
     id: 8,
     image: work5,
+    alt: "Cerca de proteção com tela galvanizada e estrutura de madeira tratada, base em alvenaria",
     title: "Cerca de Proteção",
     subTitle:
       "Instalação de cerca reforçada com acabamento em madeira para segurança e delimitação de áreas, garantindo proteção eficaz e um design harmonioso com o ambiente.",
@@ -128,10 +131,10 @@ export const services = [
       "Acabamento rústico e resistente",
     ],
   },
-
   {
     id: 9,
     image: work8,
+    alt: "Cerca reforçada com mourões de concreto, tela de arame galvanizado e canaleta de concreto na base",
     title: "Cerca de Proteção",
     subTitle:
       "Instalação de cerca com estrutura reforçada utilizando canaleta e mourão de concreto para maior resistência e durabilidade, garantindo segurança, com estabilidade reforçada para diversos ambientes.",
@@ -143,10 +146,10 @@ export const services = [
       "Ideal para delimitação de áreas em ambientes rurais e urbanos",
     ],
   },
-
   {
     id: 10,
     image: work9,
+    alt: "Cerca para área rural com mourões de madeira, tela de arame e reforço em concreto na base",
     title: "Cerca de Proteção",
     subTitle:
       "Instalação de cerca com estrutura reforçada utilizando canaleta e mourão de concreto para maior resistência e durabilidade, ideal para áreas que exigem proteção contínua e baixa manutenção.",
@@ -158,10 +161,10 @@ export const services = [
       "Ótima relação custo-benefício",
     ],
   },
-
   {
     id: 11,
     image: work10,
+    alt: "Tela de proteção residencial com estrutura metálica pintada e arame galvanizado, instalada entre mourões",
     title: "Tela de Proteção",
     subTitle:
       "Instalação de cerca utilizando mourões de madeira e canaleta de concreto para maior sustentação e segurança, combinando robustez com um acabamento natural e estético.",
