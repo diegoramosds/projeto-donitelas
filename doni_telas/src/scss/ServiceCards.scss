@@ -9,13 +9,13 @@
 }
 .service-cards {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   overflow: hidden;
   position: relative;
   width: 30%;
   gap: 20px;
-  min-height: 550px;
+  min-height: 580px;
   max-height: 1000px;
   box-shadow: #63636333 0px 2px 8px 0px;
   background-color: #ffffff;
@@ -118,7 +118,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1300px) {
   .service-cards {
-    min-height: 570px;
+    min-height: 580px;
     width: 60%;
   }
 }

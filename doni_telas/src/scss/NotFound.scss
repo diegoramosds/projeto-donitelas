@@ -1,14 +1,16 @@
 .not-found {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   height: 100vh;
   margin: 0 auto;
-  margin-top: 5em;
 }
 
 .not-found h1 {
   font-size: 3em;
-  color: #111827;
+  color: #047857;
 }
 
 .not-found button {
