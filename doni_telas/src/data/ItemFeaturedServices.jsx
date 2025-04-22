@@ -8,7 +8,7 @@ export const featuredServices = [
     image: work7,
     title: " Instalação e Manutenção",
     subTitle:
-      "Instalação e manutenção de telas de proteção para segurança em áreas residenciais e comerciais, garantindo durabilidade e resistência.",
+      "Instalação e manutenção de telas de proteção de alta qualidade, ideais para segurança em ambientes residenciais e comerciais, oferecendo maior durabilidade, resistência.",
     features: [
       "Instalação de telas de proteção para varandas, janelas e escadas.",
       "Manutenção e reparo de telas desgastadas ou danificadas.",
@@ -22,7 +22,7 @@ export const featuredServices = [
     image: work10,
     title: "Cercas e Grades de Segurança",
     subTitle:
-      "Instalação de cercas e grades de segurança para proteção de áreas residenciais, comerciais e industriais, com materiais de alta resistência..",
+      "Instalação de cercas e grades de segurança para proteção eficaz de áreas residenciais, comerciais e industriais, utilizando materiais de alta resistência que garantem durabilidade e segurança.",
     features: [
       "Instalação de cercas para delimitação de áreas.",
       "Grades de segurança para janelas, portas e varandas.",
@@ -36,7 +36,7 @@ export const featuredServices = [
     image: work6,
     title: "Construção e Reformas",
     subTitle:
-      "Serviços completos para construção e reforma de quadras esportivas, incluindo instalação de telas, cercas e pisos esportivos adequados para cada modalidade.",
+      "Serviços completos para construção e reforma de quadras esportivas, com instalação de telas, telas de proteção e pisos adequados para cada modalidade, garantindo excelente desempenho.",
     features: [
       "Montagem de telas e redes de proteção em quadras poliesportivas.",
       "Construção e reforma de cercamentos com materiais de alta durabilidade.",
